@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="OrangeHRMS">
+  <test name="Login Test" allow-return-values="true">
+    <classes>
+      <class name="com.hrms.orangehrms.project.testcases.LoginTest"></class>
+    </classes>
+  </test>
+</suite>
