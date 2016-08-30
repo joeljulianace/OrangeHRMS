@@ -8,7 +8,7 @@
           <include name="tearDown"/>
           <include name="close"/>
           <include name="startUp"/>
-          <include name="doLogin" invocation-numbers="1"/>
+          <include name="doLogin" invocation-numbers="2"/>
         </methods>
       </class> <!-- com.hrms.orangehrms.project.testcases.LoginTest -->
     </classes>

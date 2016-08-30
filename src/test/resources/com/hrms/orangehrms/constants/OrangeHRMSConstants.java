@@ -24,7 +24,7 @@ public class OrangeHRMSConstants {
 	public static final String BROWSER_MOZILLA= "Mozilla";
 	public static final String BROWSER_CHROME= "Chrome";
 	
-	//chrome propeties
+	//chrome properties
 	public static final String CHROME_PROPERTY="webdriver.chrome.driver";
 	
 	//Ends with

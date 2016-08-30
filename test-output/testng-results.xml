@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" total="2" passed="1">
+<testng-results skipped="0" failed="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="OrangeHRMS" duration-ms="15057" started-at="2016-08-29T05:20:06Z" finished-at="2016-08-29T05:20:21Z">
+  <suite name="OrangeHRMS" duration-ms="89302" started-at="2016-08-30T02:00:42Z" finished-at="2016-08-30T02:02:12Z">
     <groups>
     </groups>
-    <test name="Login Test" duration-ms="15057" started-at="2016-08-29T05:20:06Z" finished-at="2016-08-29T05:20:21Z">
+    <test name="Login Test" duration-ms="89302" started-at="2016-08-30T02:00:42Z" finished-at="2016-08-30T02:02:12Z">
       <class name="com.hrms.orangehrms.project.testcases.LoginTest">
-        <test-method status="PASS" signature="startUp()[pri:0, instance:com.hrms.orangehrms.project.testcases.LoginTest@6d3af739]" name="startUp" is-config="true" duration-ms="6" started-at="2016-08-29T10:50:06Z" finished-at="2016-08-29T10:50:06Z">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:com.hrms.orangehrms.project.testcases.LoginTest@6d3af739]" name="startUp" is-config="true" duration-ms="6" started-at="2016-08-30T07:30:42Z" finished-at="2016-08-30T07:30:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="doLogin(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.LoginTest@6d3af739]" name="doLogin" duration-ms="12504" started-at="2016-08-29T10:50:06Z" data-provider="getData" finished-at="2016-08-29T10:50:19Z">
+        <test-method status="PASS" signature="doLogin(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.LoginTest@6d3af739]" name="doLogin" duration-ms="15636" started-at="2016-08-30T07:30:43Z" data-provider="getData" finished-at="2016-08-30T07:30:59Z">
           <params>
             <param index="0">
               <value>
@@ -22,21 +22,38 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLogin -->
-        <test-method status="SKIP" signature="doLogin(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.LoginTest@6d3af739]" name="doLogin" duration-ms="0" started-at="2016-08-29T10:50:19Z" data-provider="getData" finished-at="2016-08-29T10:50:19Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:com.hrms.orangehrms.project.testcases.LoginTest@6d3af739]" name="close" is-config="true" duration-ms="0" started-at="2016-08-30T07:30:59Z" finished-at="2016-08-30T07:30:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="PASS" signature="doLogin(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.LoginTest@6d3af739]" name="doLogin" duration-ms="36383" started-at="2016-08-30T07:30:59Z" data-provider="getData" finished-at="2016-08-30T07:31:35Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Username=admin, BrowserName=Chrome, Password=xyzsa, Runmode=N, Expected Result=Fail}]]>
+                <![CDATA[{Username=admin, BrowserName=Chrome, Password=xyzsa, Runmode=Y, Expected Result=Fail}]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.SkipException">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method status="FAIL" signature="doLogin(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.LoginTest@6d3af739]" name="doLogin" duration-ms="34212" started-at="2016-08-30T07:31:35Z" data-provider="getData" finished-at="2016-08-30T07:32:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=jack, BrowserName=Chrome, Password=smith, Runmode=Y, Expected Result=Pass}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Skipping as Test Data Runmode is No]]>
+              <![CDATA[Login Test Failed]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping as Test Data Runmode is No
-	at com.hrms.orangehrms.project.testcases.LoginTest.doLogin(LoginTest.java:44)
+              <![CDATA[java.lang.AssertionError: Login Test Failed
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.hrms.orangehrms.project.base.BaseTest.reportFailure(BaseTest.java:159)
+	at com.hrms.orangehrms.project.testcases.LoginTest.doLogin(LoginTest.java:63)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -62,19 +79,19 @@
 	at org.testng.TestNG.main(TestNG.java:1324)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLogin -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.hrms.orangehrms.project.testcases.LoginTest@6d3af739]" name="close" is-config="true" duration-ms="0" started-at="2016-08-29T10:50:19Z" finished-at="2016-08-29T10:50:19Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:com.hrms.orangehrms.project.testcases.LoginTest@6d3af739]" name="close" is-config="true" duration-ms="0" started-at="2016-08-30T07:31:35Z" finished-at="2016-08-30T07:31:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.hrms.orangehrms.project.testcases.LoginTest@6d3af739]" name="close" is-config="true" duration-ms="0" started-at="2016-08-29T10:50:19Z" finished-at="2016-08-29T10:50:19Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:com.hrms.orangehrms.project.testcases.LoginTest@6d3af739]" name="close" is-config="true" duration-ms="1" started-at="2016-08-30T07:32:09Z" finished-at="2016-08-30T07:32:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.hrms.orangehrms.project.testcases.LoginTest@6d3af739]" name="tearDown" is-config="true" duration-ms="2025" started-at="2016-08-29T10:50:19Z" finished-at="2016-08-29T10:50:21Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.hrms.orangehrms.project.testcases.LoginTest@6d3af739]" name="tearDown" is-config="true" duration-ms="2567" started-at="2016-08-30T07:32:09Z" finished-at="2016-08-30T07:32:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

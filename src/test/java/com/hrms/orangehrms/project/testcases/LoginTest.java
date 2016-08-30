@@ -2,7 +2,7 @@
  * FILENAME:		Login.java
  * CREATED BY:		Joel Julian
  * CREATED DATE:	29-AUG-2016
- * MODIFIED DATE:	29-AUG-2016
+ * MODIFIED DATE:	30-AUG-2016
  * DESCRIPTION:		This file contains all test cases related to the login functionality
  * 					for Orange HRMS
  * **/
@@ -50,8 +50,18 @@ public class LoginTest extends BaseTest{
 		type("loginpage_password_input_xpath", data.get("Password"));
 		click("loginpage_login_button_xpath");
 		
-		reportPass("Login Test Passed");
-		//reportFailure("Login Test Failed");
+		//checking if user is logged in and expected result
+		if(isElementPresent("landingpage_welcomemsg_link_xpath") && data.get("Expected Result").equals(OrangeHRMSConstants.TEST_EXPECTED_RESULT_PASS)){
+			test.log(LogStatus.INFO, "Login Successful");
+			reportPass("Login Test Passed");
+		//checking if the user is unable to login and expected result	
+		}else if(isElementPresent("loginpage_errormsg_text_xpath") && data.get("Expected Result").equals(OrangeHRMSConstants.TEST_EXPECTED_RESULT_FAIL)){
+			test.log(LogStatus.INFO, "Login UnSuccessful");
+			reportPass("Login Test Passed");
+		}else{
+			test.log(LogStatus.INFO, "Login UnSuccessful");
+			reportFailure("Login Test Failed");
+		}
 	}
 	
 	@BeforeTest

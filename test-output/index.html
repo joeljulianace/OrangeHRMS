@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-OrangeHRMS">
-              <span class="suite-name border-skipped">OrangeHRMS</span>
+              <span class="suite-name border-failed">OrangeHRMS</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,21 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,  1 skipped,  1 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-OrangeHRMS" class="hide-methods skipped suite-OrangeHRMS"> (hide)</a> <!-- hide-methods skipped suite-OrangeHRMS -->
-                      <a href="#" panel-name="suite-OrangeHRMS" class="show-methods skipped suite-OrangeHRMS"> (show)</a> <!-- show-methods skipped suite-OrangeHRMS -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-OrangeHRMS" class="hide-methods failed suite-OrangeHRMS"> (hide)</a> <!-- hide-methods failed suite-OrangeHRMS -->
+                      <a href="#" panel-name="suite-OrangeHRMS" class="show-methods failed suite-OrangeHRMS"> (show)</a> <!-- show-methods failed suite-OrangeHRMS -->
                     </span>
-                    <div class="method-list-content skipped suite-OrangeHRMS">
+                    <div class="method-list-content failed suite-OrangeHRMS">
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-OrangeHRMS" title="com.hrms.orangehrms.project.testcases.LoginTest" hash-for-method="doLogin({Username=admin, BrowserName=Chrome, Password=xyzsa, Runmode=N, Expected Result=Fail})">doLogin({Username=admin, BrowserName=Chrome, Password=xyzsa, Runmode=N, Expected Result=Fail})</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-OrangeHRMS" title="com.hrms.orangehrms.project.testcases.LoginTest" hash-for-method="doLogin({Username=jack, BrowserName=Chrome, Password=smith, Runmode=Y, Expected Result=Pass})">doLogin({Username=jack, BrowserName=Chrome, Password=smith, Runmode=Y, Expected Result=Pass})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-OrangeHRMS -->
+                    </div> <!-- method-list-content failed suite-OrangeHRMS -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,6 +116,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-OrangeHRMS" title="com.hrms.orangehrms.project.testcases.LoginTest" hash-for-method="doLogin({Username=admin, BrowserName=Chrome, Password=admin, Runmode=Y, Expected Result=Pass})">doLogin({Username=admin, BrowserName=Chrome, Password=admin, Runmode=Y, Expected Result=Pass})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-OrangeHRMS" title="com.hrms.orangehrms.project.testcases.LoginTest" hash-for-method="doLogin({Username=admin, BrowserName=Chrome, Password=xyzsa, Runmode=Y, Expected Result=Fail})">doLogin({Username=admin, BrowserName=Chrome, Password=xyzsa, Runmode=Y, Expected Result=Fail})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-OrangeHRMS -->
@@ -130,26 +135,27 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-OrangeHRMS" class="panel OrangeHRMS">
-          <div class="suite-OrangeHRMS-class-skipped">
+          <div class="suite-OrangeHRMS-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.hrms.orangehrms.project.testcases.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="doLogin({Username=admin, BrowserName=Chrome, Password=xyzsa, Runmode=N, Expected Result=Fail})">
-                  </a> <!-- doLogin({Username=admin, BrowserName=Chrome, Password=xyzsa, Runmode=N, Expected Result=Fail}) -->
+                  <a name="doLogin({Username=jack, BrowserName=Chrome, Password=smith, Runmode=Y, Expected Result=Pass})">
+                  </a> <!-- doLogin({Username=jack, BrowserName=Chrome, Password=smith, Runmode=Y, Expected Result=Pass}) -->
                   <span class="method-name">doLogin</span>
-                  <span class="parameters">({Username=admin, BrowserName=Chrome, Password=xyzsa, Runmode=N, Expected Result=Fail})</span>
-                  <div class="stack-trace">org.testng.SkipException: Skipping as Test Data Runmode is No
-	at com.hrms.orangehrms.project.testcases.LoginTest.doLogin(LoginTest.java:44)
-... Removed 23 stack frames
+                  <span class="parameters">({Username=jack, BrowserName=Chrome, Password=smith, Runmode=Y, Expected Result=Pass})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Login Test Failed
+	at com.hrms.orangehrms.project.base.BaseTest.reportFailure(BaseTest.java:159)
+	at com.hrms.orangehrms.project.testcases.LoginTest.doLogin(LoginTest.java:63)
+... Removed 24 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-OrangeHRMS-class-skipped -->
+          </div> <!-- suite-OrangeHRMS-class-failed -->
           <div class="suite-OrangeHRMS-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -162,6 +168,14 @@
                   </a> <!-- doLogin({Username=admin, BrowserName=Chrome, Password=admin, Runmode=Y, Expected Result=Pass}) -->
                   <span class="method-name">doLogin</span>
                   <span class="parameters">({Username=admin, BrowserName=Chrome, Password=admin, Runmode=Y, Expected Result=Pass})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="doLogin({Username=admin, BrowserName=Chrome, Password=xyzsa, Runmode=Y, Expected Result=Fail})">
+                  </a> <!-- doLogin({Username=admin, BrowserName=Chrome, Password=xyzsa, Runmode=Y, Expected Result=Fail}) -->
+                  <span class="method-name">doLogin</span>
+                  <span class="parameters">({Username=admin, BrowserName=Chrome, Password=xyzsa, Runmode=Y, Expected Result=Fail})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -218,20 +232,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'doLogin')
 data.setCell(0, 2, 'com.hrms.orangehrms.project.testcases.LoginTest')
-data.setCell(0, 3, 12504);
+data.setCell(0, 3, 36383);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'doLogin')
 data.setCell(1, 2, 'com.hrms.orangehrms.project.testcases.LoginTest')
-data.setCell(1, 3, 0);
+data.setCell(1, 3, 34212);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'doLogin')
+data.setCell(2, 2, 'com.hrms.orangehrms.project.testcases.LoginTest')
+data.setCell(2, 3, 15636);
 window.suiteTableData['OrangeHRMS']= { tableData: data, tableDiv: 'times-div-OrangeHRMS'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-OrangeHRMS">
               </div> <!-- times-div-OrangeHRMS -->
             </div> <!-- times-div -->
@@ -264,23 +282,33 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">doLogin({Username=admin, BrowserName=Chrome, Password=admin, Runmode=Y, Expected Result=Pass})</span>
-                <span class="method-start">524 ms</span>
+                <span class="method-start">499 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">13029 ms</span>
+                <span class="method-start">16136 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">doLogin({Username=admin, BrowserName=Chrome, Password=xyzsa, Runmode=N, Expected Result=Fail})</span>
-                <span class="method-start">13029 ms</span>
+                <span class="method-name">doLogin({Username=admin, BrowserName=Chrome, Password=xyzsa, Runmode=Y, Expected Result=Fail})</span>
+                <span class="method-start">16136 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">13030 ms</span>
+                <span class="method-start">52520 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">doLogin({Username=jack, BrowserName=Chrome, Password=smith, Runmode=Y, Expected Result=Pass})</span>
+                <span class="method-start">52520 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">86732 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">13031 ms</span>
+                <span class="method-start">86734 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

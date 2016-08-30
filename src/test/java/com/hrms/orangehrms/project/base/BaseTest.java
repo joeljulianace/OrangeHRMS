@@ -2,7 +2,7 @@
  * FILENAME:		BaseTest.java
  * CREATED BY:		Joel Julian
  * CREATED DATE:	29-AUG-2016
- * MODIFIED DATE:	29-AUG-2016
+ * MODIFIED DATE:	30-AUG-2016
  * DESCRIPTION:		This file will contain all the resuable functions
  * 					All test cases will extend this file
  * */
@@ -11,6 +11,7 @@ package com.hrms.orangehrms.project.base;
 import java.io.File;
 import java.io.FileInputStream;
 import java.util.Date;
+import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -37,6 +38,7 @@ public class BaseTest{
 	public Properties ENV = null;
 	public ExtentTest test = null;
 	public ExtentReports report = ExtentManager.getInstance();
+	private WebDriver chrome_driver = null;
 	
 	//All initialization activities will be done in this function
 	public void init(){
@@ -63,7 +65,12 @@ public class BaseTest{
 			driver = new FirefoxDriver();
 		}else if(browserName.equals(OrangeHRMSConstants.BROWSER_CHROME)){
 			System.setProperty(OrangeHRMSConstants.CHROME_PROPERTY, OrangeHRMSConstants.CHROME_DRIVER_PATH);
-			driver = new ChromeDriver();
+			
+			if(chrome_driver == null){
+				chrome_driver = new ChromeDriver();
+			}
+			
+			driver = chrome_driver;
 		}
 		test.log(LogStatus.INFO, "Browser Opened Successfully");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -105,6 +112,39 @@ public class BaseTest{
 	public void click(String locatorKey){
 		test.log(LogStatus.INFO, "Clicking on: " + locatorKey);
 		getElement(locatorKey).click();
+	}
+	
+	//This will return text within a given element
+	public String getText(String locatorKey){
+		test.log(LogStatus.INFO, "Getting text from: " + locatorKey);
+		return getElement(locatorKey).getText();
+	}
+	
+	//This function checks if an element is present on the page
+	public boolean isElementPresent(String locatorKey){
+		test.log(LogStatus.INFO, "Checking presence of element: " + locatorKey);
+		
+		List<WebElement> element = null;
+		
+		try{
+			if(locatorKey.endsWith(OrangeHRMSConstants.ENDS_WITH_ID)){
+				element = driver.findElements(By.id(OR.getProperty(locatorKey)));
+			}else if(locatorKey.endsWith(OrangeHRMSConstants.ENDS_WITH_NAME)){
+				element = driver.findElements(By.name(OR.getProperty(locatorKey)));
+			}else if(locatorKey.endsWith(OrangeHRMSConstants.ENDS_WITH_XPATH)){
+				element = driver.findElements(By.xpath(OR.getProperty(locatorKey)));
+			}
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+		
+		if(element.size() > 0){
+			test.log(LogStatus.INFO, "Presence of element: " + locatorKey);
+			return true;
+		}
+		
+		test.log(LogStatus.INFO, "Element Not Present: " + locatorKey);
+		return false;
 	}
 	
 	/********************************VALIDATIONS****************************************/

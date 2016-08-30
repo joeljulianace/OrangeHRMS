@@ -6,4 +6,16 @@
       <class name="com.hrms.orangehrms.project.testcases.LoginTest"/>
     </classes>
   </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.hrms.orangehrms.project.testcases.LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="close"/>
+          <include name="startUp"/>
+          <include name="doLogin" invocation-numbers="2"/>
+        </methods>
+      </class> <!-- com.hrms.orangehrms.project.testcases.LoginTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
