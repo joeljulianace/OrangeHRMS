@@ -8,7 +8,7 @@
     <property environment="env"/>
     
     <property name="ws.home" value="${basedir}"/>
-	<property name="ws.jars" value="E:\Selenium\jars"/>
+	<property name="ws.jars" value="${ws.home}/lib"/>
     <property name="test.dest" value="${ws.home}/build"/>
     <property name="test.src" value="${ws.home}/src"/>
 	<property name="ng.result" value="test-output"/>
