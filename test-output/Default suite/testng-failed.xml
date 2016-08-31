@@ -3,19 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="com.hrms.orangehrms.project.testcases.LoginTest"/>
+      <class name="com.hrms.orangehrms.project.testcases.Admin_JobConfigTest"/>
     </classes>
   </test> <!-- Default test -->
-  <test name="Default test(failed)">
-    <classes>
-      <class name="com.hrms.orangehrms.project.testcases.LoginTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="close"/>
-          <include name="startUp"/>
-          <include name="doLogin" invocation-numbers="2"/>
-        </methods>
-      </class> <!-- com.hrms.orangehrms.project.testcases.LoginTest -->
-    </classes>
-  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

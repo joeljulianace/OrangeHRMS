@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="3" passed="2">
+<testng-results skipped="0" failed="1" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="OrangeHRMS" duration-ms="89302" started-at="2016-08-30T02:00:42Z" finished-at="2016-08-30T02:02:12Z">
+  <suite name="OrangeHRMS" duration-ms="117261" started-at="2016-08-31T02:44:24Z" finished-at="2016-08-31T02:46:21Z">
     <groups>
     </groups>
-    <test name="Login Test" duration-ms="89302" started-at="2016-08-30T02:00:42Z" finished-at="2016-08-30T02:02:12Z">
+    <test name="Login Test" duration-ms="85432" started-at="2016-08-31T02:44:24Z" finished-at="2016-08-31T02:45:49Z">
       <class name="com.hrms.orangehrms.project.testcases.LoginTest">
-        <test-method status="PASS" signature="startUp()[pri:0, instance:com.hrms.orangehrms.project.testcases.LoginTest@6d3af739]" name="startUp" is-config="true" duration-ms="6" started-at="2016-08-30T07:30:42Z" finished-at="2016-08-30T07:30:42Z">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:com.hrms.orangehrms.project.testcases.LoginTest@6d3af739]" name="startUp" is-config="true" duration-ms="6" started-at="2016-08-31T08:14:24Z" finished-at="2016-08-31T08:14:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="doLogin(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.LoginTest@6d3af739]" name="doLogin" duration-ms="15636" started-at="2016-08-30T07:30:43Z" data-provider="getData" finished-at="2016-08-30T07:30:59Z">
+        <test-method status="PASS" signature="doLogin(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.LoginTest@6d3af739]" name="doLogin" duration-ms="13053" started-at="2016-08-31T08:14:24Z" data-provider="getData" finished-at="2016-08-31T08:14:37Z">
           <params>
             <param index="0">
               <value>
@@ -22,11 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLogin -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.hrms.orangehrms.project.testcases.LoginTest@6d3af739]" name="close" is-config="true" duration-ms="0" started-at="2016-08-30T07:30:59Z" finished-at="2016-08-30T07:30:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method status="PASS" signature="doLogin(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.LoginTest@6d3af739]" name="doLogin" duration-ms="36383" started-at="2016-08-30T07:30:59Z" data-provider="getData" finished-at="2016-08-30T07:31:35Z">
+        <test-method status="PASS" signature="doLogin(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.LoginTest@6d3af739]" name="doLogin" duration-ms="36484" started-at="2016-08-31T08:14:37Z" data-provider="getData" finished-at="2016-08-31T08:15:14Z">
           <params>
             <param index="0">
               <value>
@@ -37,7 +33,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLogin -->
-        <test-method status="FAIL" signature="doLogin(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.LoginTest@6d3af739]" name="doLogin" duration-ms="34212" started-at="2016-08-30T07:31:35Z" data-provider="getData" finished-at="2016-08-30T07:32:09Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:com.hrms.orangehrms.project.testcases.LoginTest@6d3af739]" name="close" is-config="true" duration-ms="0" started-at="2016-08-31T08:14:37Z" finished-at="2016-08-31T08:14:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.hrms.orangehrms.project.testcases.LoginTest@6d3af739]" name="close" is-config="true" duration-ms="1" started-at="2016-08-31T08:15:14Z" finished-at="2016-08-31T08:15:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="FAIL" signature="doLogin(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.LoginTest@6d3af739]" name="doLogin" duration-ms="33798" started-at="2016-08-31T08:15:14Z" data-provider="getData" finished-at="2016-08-31T08:15:48Z">
           <params>
             <param index="0">
               <value>
@@ -52,7 +56,7 @@
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Login Test Failed
 	at org.testng.Assert.fail(Assert.java:94)
-	at com.hrms.orangehrms.project.base.BaseTest.reportFailure(BaseTest.java:159)
+	at com.hrms.orangehrms.project.base.BaseTest.reportFailure(BaseTest.java:160)
 	at com.hrms.orangehrms.project.testcases.LoginTest.doLogin(LoginTest.java:63)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -83,19 +87,49 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLogin -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.hrms.orangehrms.project.testcases.LoginTest@6d3af739]" name="close" is-config="true" duration-ms="0" started-at="2016-08-30T07:31:35Z" finished-at="2016-08-30T07:31:35Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:com.hrms.orangehrms.project.testcases.LoginTest@6d3af739]" name="close" is-config="true" duration-ms="0" started-at="2016-08-31T08:15:48Z" finished-at="2016-08-31T08:15:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.hrms.orangehrms.project.testcases.LoginTest@6d3af739]" name="close" is-config="true" duration-ms="1" started-at="2016-08-30T07:32:09Z" finished-at="2016-08-30T07:32:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.hrms.orangehrms.project.testcases.LoginTest@6d3af739]" name="tearDown" is-config="true" duration-ms="2567" started-at="2016-08-30T07:32:09Z" finished-at="2016-08-30T07:32:12Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.hrms.orangehrms.project.testcases.LoginTest@6d3af739]" name="tearDown" is-config="true" duration-ms="1568" started-at="2016-08-31T08:15:48Z" finished-at="2016-08-31T08:15:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.hrms.orangehrms.project.testcases.LoginTest -->
     </test> <!-- Login Test -->
+    <test name="Job Titles Test" duration-ms="31747" started-at="2016-08-31T02:45:49Z" finished-at="2016-08-31T02:46:21Z">
+      <class name="com.hrms.orangehrms.project.testcases.Admin_JobConfigTest">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@5427c60c]" name="startUp" is-config="true" duration-ms="2" started-at="2016-08-31T08:15:49Z" finished-at="2016-08-31T08:15:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="addJobTitles(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@5427c60c]" name="addJobTitles" duration-ms="23114" started-at="2016-08-31T08:15:49Z" data-provider="getData" finished-at="2016-08-31T08:16:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Note=Write code to make solve a business problem, Job Title=Software Engineer, BrowserName=Chrome, Runmode=Y, Job Description=Design software systems, Job Specification=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addJobTitles -->
+        <test-method status="PASS" signature="addJobTitles(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@5427c60c]" name="addJobTitles" duration-ms="7709" started-at="2016-08-31T08:16:12Z" data-provider="getData" finished-at="2016-08-31T08:16:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Note=Write test cases, Job Title=Software Tester, BrowserName=Chrome, Runmode=Y, Job Description=Find faults and defects in the system, Job Specification=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addJobTitles -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@5427c60c]" name="tearDown" is-config="true" duration-ms="867" started-at="2016-08-31T08:16:20Z" finished-at="2016-08-31T08:16:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.hrms.orangehrms.project.testcases.Admin_JobConfigTest -->
+    </test> <!-- Job Titles Test -->
   </suite> <!-- OrangeHRMS -->
 </testng-results>

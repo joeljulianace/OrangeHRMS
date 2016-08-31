@@ -2,7 +2,7 @@
  * FILENAME:		BaseTest.java
  * CREATED BY:		Joel Julian
  * CREATED DATE:	29-AUG-2016
- * MODIFIED DATE:	30-AUG-2016
+ * MODIFIED DATE:	31-AUG-2016
  * DESCRIPTION:		This file will contain all the resuable functions
  * 					All test cases will extend this file
  * */
@@ -39,6 +39,7 @@ public class BaseTest{
 	public ExtentTest test = null;
 	public ExtentReports report = ExtentManager.getInstance();
 	private WebDriver chrome_driver = null;
+	public boolean isLoggedIn = false;
 	
 	//All initialization activities will be done in this function
 	public void init(){
@@ -164,21 +165,42 @@ public class BaseTest{
 		Date d = new Date();
 		//creating the filename
 		String fileName = d.toString().replace(":", "_").replace(" ", "_") + ".jpg";
-		String screenshotPath=OrangeHRMSConstants.SCREENSHOTS_PATH + fileName;
+		//String screenshotPath=OrangeHRMSConstants.SCREENSHOTS_PATH + fileName;
 		
 		//taking screenshot
 		File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		
 		try {
-			FileUtils.copyFile(srcFile, new File(screenshotPath));
+			FileUtils.copyFile(srcFile, new File(OrangeHRMSConstants.SCREENSHOTS_PATH + fileName));
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
-		//adding screenshot in the extent report
-		test.log(LogStatus.INFO, "Taking Screenshot: " + test.addScreenCapture(screenshotPath));
+		//adding screenshot in the extent report by using relative path
+		test.log(LogStatus.INFO, "Taking Screenshot: " + test.addScreenCapture(OrangeHRMSConstants.EXTENT_REPORTS_SCREENSHOTS_PATH + fileName));
 	}
 	
+	/******************************Application Specific Functions*****************************/
 	
+	public void doLogin(String username, String password){
+		
+		type("loginpage_username_input_xpath", username);
+		type("loginpage_password_input_xpath", password);
+		click("loginpage_login_button_xpath");
+		
+		//checking if user is logged in and expected result
+		if(isElementPresent("landingpage_welcomemsg_link_xpath")){
+			test.log(LogStatus.INFO, "Login Successful");
+			isLoggedIn = true;
+			//reportPass("Login Test Passed");
+		//checking if the user is unable to login and expected result	
+		}else if(isElementPresent("loginpage_errormsg_text_xpath")){
+			test.log(LogStatus.INFO, "Login UnSuccessful");
+			reportFailure("Login Test Failed");
+		}else{
+			test.log(LogStatus.INFO, "Login UnSuccessful");
+			reportFailure("Login Test Failed");
+		}
+	}
 }

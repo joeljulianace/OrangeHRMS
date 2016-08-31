@@ -6,4 +6,9 @@
       <class name="com.hrms.orangehrms.project.testcases.LoginTest"></class>
     </classes>
   </test>
+  <test name="Job Titles Test" allow-return-values="true">
+    <classes>
+      <class name="com.hrms.orangehrms.project.testcases.Admin_JobConfigTest"></class>
+    </classes>
+  </test>
 </suite>

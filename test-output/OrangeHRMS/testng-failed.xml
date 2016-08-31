@@ -11,6 +11,12 @@
           <include name="doLogin" invocation-numbers="2"/>
         </methods>
       </class> <!-- com.hrms.orangehrms.project.testcases.LoginTest -->
+      <class name="com.hrms.orangehrms.project.testcases.Admin_JobConfigTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="startUp"/>
+        </methods>
+      </class> <!-- com.hrms.orangehrms.project.testcases.Admin_JobConfigTest -->
     </classes>
   </test> <!-- Login Test(failed) -->
 </suite> <!-- Failed suite [OrangeHRMS] -->

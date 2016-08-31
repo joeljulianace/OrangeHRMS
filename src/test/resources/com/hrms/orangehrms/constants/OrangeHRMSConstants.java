@@ -2,7 +2,7 @@
  * FILENAME:		OrangeHRMSConstants.java
  * CREATED BY:		Joel Julian
  * CREATED DATE:	29-AUG-2016
- * MODIFIED DATE:	29-AUG-2016
+ * MODIFIED DATE:	30-AUG-2016
  * DESCRIPTION:		This file contains all the constants used throughout the project 
  * 					
  * **/
@@ -17,6 +17,7 @@ public class OrangeHRMSConstants {
 	public static final String CHROME_DRIVER_PATH= System.getProperty("user.dir") + "//chromedriver//chromedriver.exe";
 	public static final String EXTENT_REPORTS_PATH= System.getProperty("user.dir") + "//extentreports//";
 	public static final String SCREENSHOTS_PATH= System.getProperty("user.dir") + "//screenshots//";
+	public static final String EXTENT_REPORTS_SCREENSHOTS_PATH= "../screenshots/";
 	public static final String DATA_PATH= System.getProperty("user.dir") + "//data//";
 	
 	
