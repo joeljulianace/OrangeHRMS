@@ -76,7 +76,7 @@
 
     <!-- run -->
     <target name="run" depends="compile">
-        <testng classpath="${test.classpath}:${test.dest}" suitename="Zoho_CRM">	
+        <testng classpath="${test.classpath}:${test.dest}" suitename="Orange HRMS">	
             <xmlfileset dir="${ws.home}\src\test\resources" includes="testng.xml"/>
         </testng>
         <!--

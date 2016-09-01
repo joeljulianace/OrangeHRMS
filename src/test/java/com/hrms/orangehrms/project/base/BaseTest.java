@@ -2,7 +2,7 @@
  * FILENAME:		BaseTest.java
  * CREATED BY:		Joel Julian
  * CREATED DATE:	29-AUG-2016
- * MODIFIED DATE:	31-AUG-2016
+ * MODIFIED DATE:	01-SEP-2016
  * DESCRIPTION:		This file will contain all the resuable functions
  * 					All test cases will extend this file
  * */
@@ -183,6 +183,7 @@ public class BaseTest{
 	
 	/******************************Application Specific Functions*****************************/
 	
+	//This function will serve as a default login function for other tests
 	public void doLogin(String username, String password){
 		
 		type("loginpage_username_input_xpath", username);
@@ -202,5 +203,22 @@ public class BaseTest{
 			test.log(LogStatus.INFO, "Login UnSuccessful");
 			reportFailure("Login Test Failed");
 		}
+	}
+	
+	//This functions will return on which row the given job title is present
+	public int getJobTitleRowNum(String jobTitle){
+		
+		test.log(LogStatus.INFO, "Searching Job Title: " + jobTitle);
+		List<WebElement> allJobTitles = driver.findElements(By.xpath(OR.getProperty("jobtitles_jobtitle_table_xpath")));
+		
+		for(int i = 0; i < allJobTitles.size(); i++){
+			if(allJobTitles.get(i).getText().trim().equals(jobTitle.trim())){
+				test.log(LogStatus.INFO, "Job Title Found: " + jobTitle);
+				return (i+1);
+			}
+		}
+		//will return -1 if the job title is not found in the job titles table
+		test.log(LogStatus.INFO, "Job Title Not Found: " + jobTitle);
+		return -1;
 	}
 }
