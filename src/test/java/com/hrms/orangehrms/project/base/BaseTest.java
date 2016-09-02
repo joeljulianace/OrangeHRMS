@@ -2,7 +2,7 @@
  * FILENAME:		BaseTest.java
  * CREATED BY:		Joel Julian
  * CREATED DATE:	29-AUG-2016
- * MODIFIED DATE:	01-SEP-2016
+ * MODIFIED DATE:	02-SEP-2016
  * DESCRIPTION:		This file will contain all the resuable functions
  * 					All test cases will extend this file
  * */
@@ -220,5 +220,15 @@ public class BaseTest{
 		//will return -1 if the job title is not found in the job titles table
 		test.log(LogStatus.INFO, "Job Title Not Found: " + jobTitle);
 		return -1;
+	}
+	
+	//This function selects the check box for the given job title
+	public void selectJobTitle(String jobTitle){
+		
+		test.log(LogStatus.INFO, "Selecting the Job Title: " + jobTitle);
+		int rowNum = getJobTitleRowNum(jobTitle);
+		
+		driver.findElement(By.xpath((OR.getProperty("jobtitles_jobtitle_table_part1_xpath")) + rowNum + OR.getProperty("jobtitles_jobtitle_table_part2_xpath"))).click();
+		test.log(LogStatus.INFO, "Job Title Seelcted: " + jobTitle);		
 	}
 }

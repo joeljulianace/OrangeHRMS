@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test verbose="2" name="Default test">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [OrangeHRMS]">
+  <test name="Login Test(failed)">
     <classes>
-      <class name="com.hrms.orangehrms.project.testcases.Admin_JobConfigTest"/>
+      <class name="com.hrms.orangehrms.project.testcases.LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="close"/>
+          <include name="startUp"/>
+          <include name="doLogin" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- com.hrms.orangehrms.project.testcases.LoginTest -->
+      <class name="com.hrms.orangehrms.project.testcases.Admin_JobConfigTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="create"/>
+          <include name="destroy"/>
+          <include name="startUp"/>
+        </methods>
+      </class> <!-- com.hrms.orangehrms.project.testcases.Admin_JobConfigTest -->
     </classes>
-  </test> <!-- Default test -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Login Test(failed) -->
+</suite> <!-- Failed suite [OrangeHRMS] -->

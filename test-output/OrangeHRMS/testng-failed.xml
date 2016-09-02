@@ -8,12 +8,14 @@
           <include name="tearDown"/>
           <include name="close"/>
           <include name="startUp"/>
-          <include name="doLogin" invocation-numbers="2"/>
+          <include name="doLogin" invocation-numbers="0 1 2"/>
         </methods>
       </class> <!-- com.hrms.orangehrms.project.testcases.LoginTest -->
       <class name="com.hrms.orangehrms.project.testcases.Admin_JobConfigTest">
         <methods>
           <include name="tearDown"/>
+          <include name="create"/>
+          <include name="destroy"/>
           <include name="startUp"/>
         </methods>
       </class> <!-- com.hrms.orangehrms.project.testcases.Admin_JobConfigTest -->
