@@ -157,7 +157,7 @@ public class BaseTest{
 	public void reportFailure(String message){
 		test.log(LogStatus.FAIL, message);
 		takeScreenshot();
-		Assert.fail(message);
+		//Assert.fail(message);
 	}
 	
 	//This function helps to take a screenshot and attach it in the extent report
@@ -229,6 +229,15 @@ public class BaseTest{
 		int rowNum = getJobTitleRowNum(jobTitle);
 		
 		driver.findElement(By.xpath((OR.getProperty("jobtitles_jobtitle_table_part1_xpath")) + rowNum + OR.getProperty("jobtitles_jobtitle_table_part2_xpath"))).click();
-		test.log(LogStatus.INFO, "Job Title Seelcted: " + jobTitle);		
+		test.log(LogStatus.INFO, "Job Title Selected: " + jobTitle);		
+	}
+	
+	public void clickJobTitle(String jobTitle){
+		
+		test.log(LogStatus.INFO, "Clicking on Job Title: " + jobTitle);
+		int rowNum = getJobTitleRowNum(jobTitle);
+		
+		driver.findElement(By.xpath(OR.getProperty("jobtitles_jobtitle_edit_table_part1_xpath") + rowNum + OR.getProperty("jobtitles_jobtitle_edit_table_part2_xpath"))).click();
+		test.log(LogStatus.INFO, "Job Title Clicked: " + jobTitle);
 	}
 }
