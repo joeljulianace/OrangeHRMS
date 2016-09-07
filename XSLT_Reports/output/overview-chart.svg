@@ -24,18 +24,18 @@
                     </text>
       <rect style="fill:green;stroke-width:1;stroke:black;" x="10" y="125" width="20"
             height="20"/>
-      <text class="legendtext" x="40" y="143">Passed (77%)
+      <text class="legendtext" x="40" y="143">Passed (85%)
                     </text>
       <rect style="fill:yellow;stroke-width:1;stroke:black;" x="10" y="163" width="20"
             height="20"/>
-      <text class="legendtext" x="40" y="182">Skipped (23%)
+      <text class="legendtext" x="40" y="182">Skipped (15%)
                     </text>
       <g style="stroke:black;stroke-width:1" transform="translate(450,150)">
-         <g style="fill:green" transform="rotate(-83.07692307692308)">
-            <path d="M 0 0 h 130 A 130,130 0,1,0 15.669638668306598,129.05216938899054 z"/>
+         <g style="fill:green" transform="rotate(-54)">
+            <path d="M 0 0 h 130 A 130,130 0,1,0 76.41196594085409,105.1722941703458 z"/>
          </g>
          <g style="fill:yellow" transform="rotate(360)">
-            <path d="M 0 0 h 130 A 130,130 0,0,0 15.669807362654527,-129.0521489058485 z"/>
+            <path d="M 0 0 h 130 A 130,130 0,0,0 76.41210341986479,-105.17219428609394 z"/>
          </g>
       </g>
    </svg>

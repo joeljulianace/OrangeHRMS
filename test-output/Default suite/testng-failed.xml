@@ -10,7 +10,7 @@
     <classes>
       <class name="com.hrms.orangehrms.project.testcases.Admin_JobConfigTest">
         <methods>
-          <include name="addJobTitles" invocation-numbers="0 1 2"/>
+          <include name="addJobTitles" invocation-numbers="0 1 2 3 4 5 6"/>
           <include name="tearDown"/>
           <include name="deleteJobTitleTest" invocation-numbers="0 1 2"/>
           <include name="create"/>

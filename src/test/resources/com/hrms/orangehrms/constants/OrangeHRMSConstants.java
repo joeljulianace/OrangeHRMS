@@ -43,4 +43,8 @@ public class OrangeHRMSConstants {
 	public static final String TEST_EXPECTED_RESULT = "Expected Result";
 	public static final String TEST_EXPECTED_RESULT_PASS = "Pass";
 	public static final String TEST_EXPECTED_RESULT_FAIL = "Fail";
+	public static final String JOBTITLE_JOB_SPECIFICATION_RANDOM = "Random";
+	public static final String JOBTITLE_EDIT_JOB_SPECIFICATION_KEEP_CURRENT="Keep Current";
+	public static final String JOBTITLE_EDIT_JOB_SPECIFICATION_DELETE_CURRENT="Delete Current";
+	public static final String JOBTITLE_EDIT_JOB_SPECIFICATION_REPLACE_CURRENT="Replace Current";
 }

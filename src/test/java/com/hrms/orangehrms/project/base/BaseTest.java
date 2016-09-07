@@ -2,34 +2,39 @@
  * FILENAME:		BaseTest.java
  * CREATED BY:		Joel Julian
  * CREATED DATE:	29-AUG-2016
- * MODIFIED DATE:	02-SEP-2016
+ * MODIFIED DATE:	05-SEP-2016
  * DESCRIPTION:		This file will contain all the resuable functions
  * 					All test cases will extend this file
  * */
 package com.hrms.orangehrms.project.base;
 
+import java.awt.AWTException;
+import java.awt.Robot;
 import java.io.File;
 import java.io.FileInputStream;
 import java.util.Date;
 import java.util.List;
 import java.util.Properties;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.Assert;
+import org.openqa.selenium.interactions.Actions;
 
 import com.hrms.orangehrms.constants.OrangeHRMSConstants;
 import com.hrms.orangehrms.project.util.ExtentManager;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+import com.sun.glass.events.KeyEvent;
 
 public class BaseTest{
 	
@@ -98,6 +103,7 @@ public class BaseTest{
 			}
 		}catch(Exception e){
 			e.printStackTrace();
+			reportFailure("Cannot find element: " + locatorKey);
 		}
 		
 		return element;
@@ -146,6 +152,65 @@ public class BaseTest{
 		
 		test.log(LogStatus.INFO, "Element Not Present: " + locatorKey);
 		return false;
+	}
+	
+	//This function will wait for the given number of seconds
+	public void waitForSeconds(int timeToWait){	
+		try {
+			Thread.sleep(timeToWait * 1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	//This file will randomly select any of the files from the dir and return the path 
+	public String selectRandomFile(String dirPath){
+		
+		String fileName = null;
+		test.log(LogStatus.INFO, "Selecting Random file from: " + dirPath);
+		//Sending the dir path
+		File file = new File(dirPath);
+		//Getting list of all files in the dir
+		File[] files = file.listFiles();
+		//Generating a random class object
+		Random random = new Random();
+		
+		//Checking if files are present in the dir
+		if(files.length > 0){
+			//Selecting a random file from the dir
+			fileName = files[random.nextInt(files.length)].toString();
+		}
+		
+		test.log(LogStatus.INFO, "Random file selected: " + fileName);
+		return fileName;
+	}
+	
+	//This function will find & return a list of all the elements associated with the locatorKey
+	public List<WebElement> getElements(String locatorKey){
+		test.log(LogStatus.INFO, "Finding elements: " + locatorKey);
+		List<WebElement> element = null;
+		
+		try{
+			if(locatorKey.endsWith(OrangeHRMSConstants.ENDS_WITH_ID)){
+				element = driver.findElements(By.id(OR.getProperty(locatorKey)));
+			}else if(locatorKey.endsWith(OrangeHRMSConstants.ENDS_WITH_NAME)){
+				element = driver.findElements(By.name(OR.getProperty(locatorKey)));
+			}else if(locatorKey.endsWith(OrangeHRMSConstants.ENDS_WITH_XPATH)){
+				element = driver.findElements(By.xpath(OR.getProperty(locatorKey)));
+			}
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+		
+		test.log(LogStatus.INFO, "Elements Found: " + locatorKey);
+		
+		return element;
+	}
+	
+	public void refreshPage(){
+		test.log(LogStatus.INFO, "Refreshing the page");
+		driver.navigate().refresh();
 	}
 	
 	/********************************VALIDATIONS****************************************/
@@ -232,6 +297,7 @@ public class BaseTest{
 		test.log(LogStatus.INFO, "Job Title Selected: " + jobTitle);		
 	}
 	
+	//This function will click on the job title
 	public void clickJobTitle(String jobTitle){
 		
 		test.log(LogStatus.INFO, "Clicking on Job Title: " + jobTitle);
@@ -239,5 +305,26 @@ public class BaseTest{
 		
 		driver.findElement(By.xpath(OR.getProperty("jobtitles_jobtitle_edit_table_part1_xpath") + rowNum + OR.getProperty("jobtitles_jobtitle_edit_table_part2_xpath"))).click();
 		test.log(LogStatus.INFO, "Job Title Clicked: " + jobTitle);
+	}
+	
+	//This function will select the job specification radio button 
+	public void selectJobSpecification(String jobSpecifcationSelection){
+		
+		test.log(LogStatus.INFO, "Selecting Job Specification: " + jobSpecifcationSelection);
+		
+		//Getting all the radio buttons
+		List<WebElement> radios = getElements("editjobtitle_jobspecification_all_radios_xpath");
+		
+		//Checking if the radio buttons are found
+		if(radios.size() > 0){
+			for(WebElement radio : radios){
+				//Checking if the radio buttons is same as per the job specification passed
+				if(radio.getText().trim().equals(jobSpecifcationSelection)){
+					test.log(LogStatus.INFO, "Clicking on Job Specification: " + jobSpecifcationSelection);
+					//clicking on the required radio button
+					radio.click();
+				}
+			}
+		}
 	}
 }
