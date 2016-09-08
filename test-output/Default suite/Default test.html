@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>7/0/10</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/16</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Sep 07 07:42:06 IST 2016</td>
+<td>Started on:</td><td>Thu Sep 08 07:37:23 IST 2016</td>
 </tr>
-<tr><td>Total time:</td><td>205 seconds (205924 ms)</td>
+<tr><td>Total time:</td><td>56 seconds (56957 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,47 +67,70 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.editJobTitleTest()'><b>editJobTitleTest</b><br>Test class: com.hrms.orangehrms.project.testcases.Admin_JobConfigTest<br>Parameters: {New Job Title=Test Architect, BrowserName=Chrome, Runmode=Y, Attachment=, Old Job Title=Software Engineer, Duplicate=Y, Job Specification=}</td>
-<td></td>
-<td>21</td>
-<td>com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89</td></tr>
-<tr>
-<td title='com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.editJobTitleTest()'><b>editJobTitleTest</b><br>Test class: com.hrms.orangehrms.project.testcases.Admin_JobConfigTest<br>Parameters: {New Job Title=ICT Business Analyst, BrowserName=Chrome, Runmode=Y, Attachment=Random, Old Job Title=Business Analyst, Duplicate=N, Job Specification=}</td>
-<td></td>
-<td>41</td>
-<td>com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89</td></tr>
-<tr>
-<td title='com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.editJobTitleTest()'><b>editJobTitleTest</b><br>Test class: com.hrms.orangehrms.project.testcases.Admin_JobConfigTest<br>Parameters: {New Job Title=Network Security Engineer, BrowserName=Chrome, Runmode=Y, Attachment=, Old Job Title=Network Engineer, Duplicate=N, Job Specification=}</td>
-<td></td>
-<td>5</td>
-<td>com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89</td></tr>
-<tr>
-<td title='com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.editJobTitleTest()'><b>editJobTitleTest</b><br>Test class: com.hrms.orangehrms.project.testcases.Admin_JobConfigTest<br>Parameters: {New Job Title=Test Architect, BrowserName=Chrome, Runmode=Y, Attachment=Random, Old Job Title=Test Architect, Duplicate=N, Job Specification=Replace Current}</td>
-<td></td>
-<td>41</td>
-<td>com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89</td></tr>
-<tr>
-<td title='com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.editJobTitleTest()'><b>editJobTitleTest</b><br>Test class: com.hrms.orangehrms.project.testcases.Admin_JobConfigTest<br>Parameters: {New Job Title=Software Engineer, BrowserName=Chrome, Runmode=Y, Attachment=, Old Job Title=Software Engineer, Duplicate=N, Job Specification=Keep Current}</td>
-<td></td>
-<td>41</td>
-<td>com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89</td></tr>
-<tr>
-<td title='com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.editJobTitleTest()'><b>editJobTitleTest</b><br>Test class: com.hrms.orangehrms.project.testcases.Admin_JobConfigTest<br>Parameters: {New Job Title=Sr. Software Engineer, BrowserName=Chrome, Runmode=Y, Attachment=E:\Selenium\OrangeHRM\OrangeHRMS_DDF_Framework\extentreports\abc.xml, Old Job Title=Sr. Software Engineer, Duplicate=N, Job Specification=Replace Current}</td>
-<td></td>
-<td>10</td>
-<td>com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89</td></tr>
-<tr>
-<td title='com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.editJobTitleTest()'><b>editJobTitleTest</b><br>Test class: com.hrms.orangehrms.project.testcases.Admin_JobConfigTest<br>Parameters: {New Job Title=QA Engineer, BrowserName=Chrome, Runmode=Y, Attachment=, Old Job Title=QA Engineer, Duplicate=N, Job Specification=Delete Current}</td>
-<td></td>
-<td>41</td>
+<td title='com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles()'><b>addJobTitles</b><br>Test class: com.hrms.orangehrms.project.testcases.Admin_JobConfigTest<br>Parameters: {Note=Write and maintain the quality assurance process, Job Title=QA Engineer, BrowserName=Chrome, Runmode=Y, Duplicate=N, Job Description=Find faults and defects in the software quality process, Job Specification=Random}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles(Admin_JobConfigTest.java:138)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div><a href='#' onClick='toggleBox("stack-trace861623840", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace861623840'><pre>java.lang.NullPointerException
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles(Admin_JobConfigTest.java:138)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>52</td>
 <td>com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
@@ -118,9 +141,9 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles()'><b>addJobTitles</b><br>Test class: com.hrms.orangehrms.project.testcases.Admin_JobConfigTest<br>Parameters: {Note=Write code to solve a business problem, Job Title=Software Engineer, BrowserName=Chrome, Runmode=Y, Duplicate=Y, Job Description=Design software systems, Job Specification=Random}</td>
-<td><div><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
-	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles(Admin_JobConfigTest.java:42)
+<td title='com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles()'><b>addJobTitles</b><br>Test class: com.hrms.orangehrms.project.testcases.Admin_JobConfigTest<br>Parameters: {Note=Write code to solve a business problem, Job Title=Software Engineer, BrowserName=Chrome, Runmode=N, Duplicate=Y, Job Description=Design software systems, Job Specification=Random}</td>
+<td><div><pre>org.testng.SkipException: Skipping as Test Data Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles(Admin_JobConfigTest.java:49)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -146,8 +169,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 </pre></div><a href='#' onClick='toggleBox("stack-trace690686166", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace690686166'><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
-	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles(Admin_JobConfigTest.java:42)
+<div class='stack-trace' id='stack-trace690686166'><pre>org.testng.SkipException: Skipping as Test Data Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles(Admin_JobConfigTest.java:49)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -176,9 +199,9 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89</td></tr>
 <tr>
-<td title='com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles()'><b>addJobTitles</b><br>Test class: com.hrms.orangehrms.project.testcases.Admin_JobConfigTest<br>Parameters: {Note=Write test cases, Job Title=Software Tester, BrowserName=Chrome, Runmode=Y, Duplicate=N, Job Description=Find faults and defects in the system, Job Specification=Random}</td>
-<td><div><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
-	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles(Admin_JobConfigTest.java:42)
+<td title='com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles()'><b>addJobTitles</b><br>Test class: com.hrms.orangehrms.project.testcases.Admin_JobConfigTest<br>Parameters: {Note=Write test cases, Job Title=Software Tester, BrowserName=Chrome, Runmode=N, Duplicate=N, Job Description=Find faults and defects in the system, Job Specification=Random}</td>
+<td><div><pre>org.testng.SkipException: Skipping as Test Data Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles(Admin_JobConfigTest.java:49)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -204,8 +227,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 </pre></div><a href='#' onClick='toggleBox("stack-trace1613095350", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1613095350'><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
-	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles(Admin_JobConfigTest.java:42)
+<div class='stack-trace' id='stack-trace1613095350'><pre>org.testng.SkipException: Skipping as Test Data Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles(Admin_JobConfigTest.java:49)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -234,9 +257,9 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89</td></tr>
 <tr>
-<td title='com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles()'><b>addJobTitles</b><br>Test class: com.hrms.orangehrms.project.testcases.Admin_JobConfigTest<br>Parameters: {Note=Write code to automate testing, Job Title=Test Architect, BrowserName=Chrome, Runmode=Y, Duplicate=N, Job Description=Design automation frameworks, Job Specification=}</td>
-<td><div><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
-	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles(Admin_JobConfigTest.java:42)
+<td title='com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles()'><b>addJobTitles</b><br>Test class: com.hrms.orangehrms.project.testcases.Admin_JobConfigTest<br>Parameters: {Note=Write code to automate testing, Job Title=Test Architect, BrowserName=Chrome, Runmode=N, Duplicate=N, Job Description=Design automation frameworks, Job Specification=}</td>
+<td><div><pre>org.testng.SkipException: Skipping as Test Data Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles(Admin_JobConfigTest.java:49)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -262,8 +285,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 </pre></div><a href='#' onClick='toggleBox("stack-trace1430439149", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1430439149'><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
-	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles(Admin_JobConfigTest.java:42)
+<div class='stack-trace' id='stack-trace1430439149'><pre>org.testng.SkipException: Skipping as Test Data Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles(Admin_JobConfigTest.java:49)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -292,9 +315,9 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89</td></tr>
 <tr>
-<td title='com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles()'><b>addJobTitles</b><br>Test class: com.hrms.orangehrms.project.testcases.Admin_JobConfigTest<br>Parameters: {Note=Maintain and add new components to the network, Job Title=, BrowserName=Chrome, Runmode=Y, Duplicate=N, Job Description=Manage and setup the network, Job Specification=}</td>
-<td><div><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
-	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles(Admin_JobConfigTest.java:42)
+<td title='com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles()'><b>addJobTitles</b><br>Test class: com.hrms.orangehrms.project.testcases.Admin_JobConfigTest<br>Parameters: {Note=Maintain and add new components to the network, Job Title=, BrowserName=Chrome, Runmode=N, Duplicate=N, Job Description=Manage and setup the network, Job Specification=}</td>
+<td><div><pre>org.testng.SkipException: Skipping as Test Data Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles(Admin_JobConfigTest.java:49)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -320,8 +343,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 </pre></div><a href='#' onClick='toggleBox("stack-trace1521083627", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1521083627'><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
-	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles(Admin_JobConfigTest.java:42)
+<div class='stack-trace' id='stack-trace1521083627'><pre>org.testng.SkipException: Skipping as Test Data Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles(Admin_JobConfigTest.java:49)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -350,9 +373,9 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89</td></tr>
 <tr>
-<td title='com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles()'><b>addJobTitles</b><br>Test class: com.hrms.orangehrms.project.testcases.Admin_JobConfigTest<br>Parameters: {Note=Maintain and add new components to the network, Job Title=Network Engineer, BrowserName=Chrome, Runmode=Y, Duplicate=Y, Job Description=Manage and setup the network, Job Specification=E:\Selenium\OrangeHRM\OrangeHRMS_DDF_Framework\abc.xml}</td>
-<td><div><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
-	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles(Admin_JobConfigTest.java:42)
+<td title='com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles()'><b>addJobTitles</b><br>Test class: com.hrms.orangehrms.project.testcases.Admin_JobConfigTest<br>Parameters: {Note=Maintain and add new components to the network, Job Title=Network Engineer, BrowserName=Chrome, Runmode=N, Duplicate=Y, Job Description=Manage and setup the network, Job Specification=E:\Selenium\OrangeHRM\OrangeHRMS_DDF_Framework\abc.xml}</td>
+<td><div><pre>org.testng.SkipException: Skipping as Test Data Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles(Admin_JobConfigTest.java:49)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -378,8 +401,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 </pre></div><a href='#' onClick='toggleBox("stack-trace1051876890", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1051876890'><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
-	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles(Admin_JobConfigTest.java:42)
+<div class='stack-trace' id='stack-trace1051876890'><pre>org.testng.SkipException: Skipping as Test Data Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles(Admin_JobConfigTest.java:49)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -408,9 +431,9 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89</td></tr>
 <tr>
-<td title='com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles()'><b>addJobTitles</b><br>Test class: com.hrms.orangehrms.project.testcases.Admin_JobConfigTest<br>Parameters: {Note=Write test cases, Job Title=Sr. Software Tester, BrowserName=Chrome, Runmode=Y, Duplicate=N, Job Description=Find faults and defects in the system, Job Specification=Random}</td>
-<td><div><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
-	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles(Admin_JobConfigTest.java:42)
+<td title='com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles()'><b>addJobTitles</b><br>Test class: com.hrms.orangehrms.project.testcases.Admin_JobConfigTest<br>Parameters: {Note=Write test cases, Job Title=Sr. Software Tester, BrowserName=Chrome, Runmode=N, Duplicate=N, Job Description=Find faults and defects in the system, Job Specification=Random}</td>
+<td><div><pre>org.testng.SkipException: Skipping as Test Data Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles(Admin_JobConfigTest.java:49)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -436,66 +459,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 </pre></div><a href='#' onClick='toggleBox("stack-trace396283472", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace396283472'><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
-	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles(Admin_JobConfigTest.java:42)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-</pre></div></td>
-<td>0</td>
-<td>com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89</td></tr>
-<tr>
-<td title='com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles()'><b>addJobTitles</b><br>Test class: com.hrms.orangehrms.project.testcases.Admin_JobConfigTest<br>Parameters: {Note=Write and maintain the quality assurance process, Job Title=QA Engineer, BrowserName=Chrome, Runmode=Y, Duplicate=N, Job Description=Find faults and defects in the software quality process, Job Specification=Random}</td>
-<td><div><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
-	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles(Admin_JobConfigTest.java:42)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1217467887", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1217467887'><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
-	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles(Admin_JobConfigTest.java:42)
+<div class='stack-trace' id='stack-trace396283472'><pre>org.testng.SkipException: Skipping as Test Data Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles(Admin_JobConfigTest.java:49)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -526,7 +491,7 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.deleteJobTitleTest()'><b>deleteJobTitleTest</b><br>Test class: com.hrms.orangehrms.project.testcases.Admin_JobConfigTest<br>Parameters: {Job Title=Software Tester, BrowserName=Chrome, Runmode=Y, Expected Result=Pass}</td>
 <td><div><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
-	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.deleteJobTitleTest(Admin_JobConfigTest.java:138)
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.deleteJobTitleTest(Admin_JobConfigTest.java:156)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -551,67 +516,9 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-</pre></div><a href='#' onClick='toggleBox("stack-trace718187988", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace718187988'><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
-	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.deleteJobTitleTest(Admin_JobConfigTest.java:138)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-</pre></div></td>
-<td>0</td>
-<td>com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89</td></tr>
-<tr>
-<td title='com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.deleteJobTitleTest()'><b>deleteJobTitleTest</b><br>Test class: com.hrms.orangehrms.project.testcases.Admin_JobConfigTest<br>Parameters: {Job Title=Network Engineer, BrowserName=Chrome, Runmode=Y, Expected Result=Pass}</td>
-<td><div><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
-	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.deleteJobTitleTest(Admin_JobConfigTest.java:138)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1709804316", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1709804316'><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
-	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.deleteJobTitleTest(Admin_JobConfigTest.java:138)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1107530534", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1107530534'><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.deleteJobTitleTest(Admin_JobConfigTest.java:156)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -640,9 +547,9 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89</td></tr>
 <tr>
-<td title='com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.deleteJobTitleTest()'><b>deleteJobTitleTest</b><br>Test class: com.hrms.orangehrms.project.testcases.Admin_JobConfigTest<br>Parameters: {Job Title=Project Manager, BrowserName=Chrome, Runmode=Y, Expected Result=Fail}</td>
+<td title='com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.deleteJobTitleTest()'><b>deleteJobTitleTest</b><br>Test class: com.hrms.orangehrms.project.testcases.Admin_JobConfigTest<br>Parameters: {Job Title=Network Engineer, BrowserName=Chrome, Runmode=N, Expected Result=Pass}</td>
 <td><div><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
-	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.deleteJobTitleTest(Admin_JobConfigTest.java:138)
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.deleteJobTitleTest(Admin_JobConfigTest.java:156)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -667,9 +574,473 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1414506856", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1414506856'><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
-	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.deleteJobTitleTest(Admin_JobConfigTest.java:138)
+</pre></div><a href='#' onClick='toggleBox("stack-trace888287133", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace888287133'><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.deleteJobTitleTest(Admin_JobConfigTest.java:156)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>0</td>
+<td>com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89</td></tr>
+<tr>
+<td title='com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.deleteJobTitleTest()'><b>deleteJobTitleTest</b><br>Test class: com.hrms.orangehrms.project.testcases.Admin_JobConfigTest<br>Parameters: {Job Title=Project Manager, BrowserName=Chrome, Runmode=N, Expected Result=Fail}</td>
+<td><div><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.deleteJobTitleTest(Admin_JobConfigTest.java:156)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1398241764", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1398241764'><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.deleteJobTitleTest(Admin_JobConfigTest.java:156)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>0</td>
+<td>com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89</td></tr>
+<tr>
+<td title='com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.editJobTitleTest()'><b>editJobTitleTest</b><br>Test class: com.hrms.orangehrms.project.testcases.Admin_JobConfigTest<br>Parameters: {New Job Title=Test Architect, BrowserName=Chrome, Runmode=Y, Attachment=, Old Job Title=Software Engineer, Duplicate=Y, Job Specification=}</td>
+<td><div><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.editJobTitleTest(Admin_JobConfigTest.java:218)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1681303515", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1681303515'><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.editJobTitleTest(Admin_JobConfigTest.java:218)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>0</td>
+<td>com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89</td></tr>
+<tr>
+<td title='com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.editJobTitleTest()'><b>editJobTitleTest</b><br>Test class: com.hrms.orangehrms.project.testcases.Admin_JobConfigTest<br>Parameters: {New Job Title=ICT Business Analyst, BrowserName=Chrome, Runmode=Y, Attachment=Random, Old Job Title=Business Analyst, Duplicate=N, Job Specification=}</td>
+<td><div><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.editJobTitleTest(Admin_JobConfigTest.java:218)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1370283822", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1370283822'><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.editJobTitleTest(Admin_JobConfigTest.java:218)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>0</td>
+<td>com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89</td></tr>
+<tr>
+<td title='com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.editJobTitleTest()'><b>editJobTitleTest</b><br>Test class: com.hrms.orangehrms.project.testcases.Admin_JobConfigTest<br>Parameters: {New Job Title=Network Security Engineer, BrowserName=Chrome, Runmode=Y, Attachment=, Old Job Title=Network Engineer, Duplicate=N, Job Specification=}</td>
+<td><div><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.editJobTitleTest(Admin_JobConfigTest.java:218)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1346292516", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1346292516'><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.editJobTitleTest(Admin_JobConfigTest.java:218)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>0</td>
+<td>com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89</td></tr>
+<tr>
+<td title='com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.editJobTitleTest()'><b>editJobTitleTest</b><br>Test class: com.hrms.orangehrms.project.testcases.Admin_JobConfigTest<br>Parameters: {New Job Title=Test Architect, BrowserName=Chrome, Runmode=Y, Attachment=Random, Old Job Title=Test Architect, Duplicate=N, Job Specification=Replace Current}</td>
+<td><div><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.editJobTitleTest(Admin_JobConfigTest.java:218)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div><a href='#' onClick='toggleBox("stack-trace461591680", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace461591680'><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.editJobTitleTest(Admin_JobConfigTest.java:218)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>0</td>
+<td>com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89</td></tr>
+<tr>
+<td title='com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.editJobTitleTest()'><b>editJobTitleTest</b><br>Test class: com.hrms.orangehrms.project.testcases.Admin_JobConfigTest<br>Parameters: {New Job Title=Software Engineer, BrowserName=Chrome, Runmode=Y, Attachment=, Old Job Title=Software Engineer, Duplicate=N, Job Specification=Keep Current}</td>
+<td><div><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.editJobTitleTest(Admin_JobConfigTest.java:218)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1792227359", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1792227359'><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.editJobTitleTest(Admin_JobConfigTest.java:218)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>0</td>
+<td>com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89</td></tr>
+<tr>
+<td title='com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.editJobTitleTest()'><b>editJobTitleTest</b><br>Test class: com.hrms.orangehrms.project.testcases.Admin_JobConfigTest<br>Parameters: {New Job Title=Sr. Software Engineer, BrowserName=Chrome, Runmode=Y, Attachment=E:\Selenium\OrangeHRM\OrangeHRMS_DDF_Framework\extentreports\abc.xml, Old Job Title=Sr. Software Engineer, Duplicate=N, Job Specification=Replace Current}</td>
+<td><div><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.editJobTitleTest(Admin_JobConfigTest.java:218)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div><a href='#' onClick='toggleBox("stack-trace116289363", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace116289363'><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.editJobTitleTest(Admin_JobConfigTest.java:218)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>0</td>
+<td>com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89</td></tr>
+<tr>
+<td title='com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.editJobTitleTest()'><b>editJobTitleTest</b><br>Test class: com.hrms.orangehrms.project.testcases.Admin_JobConfigTest<br>Parameters: {New Job Title=QA Engineer, BrowserName=Chrome, Runmode=Y, Attachment=, Old Job Title=QA Engineer, Duplicate=N, Job Specification=Delete Current}</td>
+<td><div><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.editJobTitleTest(Admin_JobConfigTest.java:218)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div><a href='#' onClick='toggleBox("stack-trace423733503", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace423733503'><pre>org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.editJobTitleTest(Admin_JobConfigTest.java:218)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
