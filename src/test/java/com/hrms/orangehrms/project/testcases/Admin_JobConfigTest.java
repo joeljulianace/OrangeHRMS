@@ -2,7 +2,7 @@
  * FILENAME:		Admin_JobConfig.java
  * CREATED BY:		Joel Julian
  * CREATED DATE:	30-AUG-2016
- * MODIFIED DATE:	08-SEP-2016
+ * MODIFIED DATE:	09-SEP-2016
  * DESCRIPTION:		This file contains all job configuration related test cases
  *                  whose actions would be executed via an admin 
  * 					
@@ -106,7 +106,17 @@ public class Admin_JobConfigTest extends BaseTest{
 			}else{
 				//reportFailure("Job Title Could Not Be Added Successfully: " + data.get("Job Title"));
 				softAssert.assertTrue(false, "Job Title Could Not Be Added Successfully: " + data.get("Job Title"));
-			}	
+			}
+			
+			//Checking if the confirmation message is displayed once the job title is added
+			//Checking the confirmation message text
+			if(messageText.trim().contains(OR.getProperty("jobtitle_saved_successmsg"))){
+				//reporting pass
+				reportPass("Add Job Title Test Passed");
+			}else{
+				//reporting failure
+				reportFailure("Add Job Title Test Failed");
+			}
 		}else if(isElementPresent("addjobtitle_jobtitle_errormsg_text_xpath")){
 			
 			//Checking if the job title field is left blank
@@ -114,35 +124,25 @@ public class Admin_JobConfigTest extends BaseTest{
 				//If title is already present error message is displayed, checking for duplicate flag
 				if(data.get("Duplicate").equals("Y")){
 					//If error message occurs passing the test
-					//reportPass(OR.getProperty("addjobtitle_errormsg") + ", error message displayed for job title: "  + data.get("Job Title"));
-					test.log(LogStatus.INFO, OR.getProperty("addjobtitle_errormsg") + ", error message displayed for job title: "  + data.get("Job Title"));
+					reportPass(OR.getProperty("addjobtitle_errormsg") + ", error message displayed for job title: "  + data.get("Job Title"));
+					//test.log(LogStatus.INFO, OR.getProperty("addjobtitle_errormsg") + ", error message displayed for job title: "  + data.get("Job Title"));
 				}else{
 					//failing the test as error message occurred
-					softAssert.assertTrue(false, OR.getProperty("addjobtitle_errormsg") + ", error message displayed for job title: "  + data.get("Job Title"));
-					//reportFailure(OR.getProperty("addjobtitle_errormsg") + ", error message displayed for job title: "  + data.get("Job Title"));
+					//softAssert.assertTrue(false, OR.getProperty("addjobtitle_errormsg") + ", error message displayed for job title: "  + data.get("Job Title"));
+					reportFailure(OR.getProperty("addjobtitle_errormsg") + ", error message displayed for job title: "  + data.get("Job Title"));
 					//reportFailure(OR.getProperty("addjobtitle_errormsg") + ", error message displayed for job title: "  + data.get("Job Title"));
 				}
 			}else{
 				//Reporting error incase the job title field is left blank
-				//reportFailure("Job Title Is Mandatory");
-				softAssert.assertTrue(false, "Job Title Is Mandatory");
+				reportFailure("Job Title Is Mandatory");
+				//softAssert.assertTrue(false, "Job Title Is Mandatory");
 			}
 		}else{
 			//reporting the failure as file is not found
-			//reportFailure("File Not Found: " + data.get("Job Specification"));
-			softAssert.assertTrue(false, "File Not Found: " + data.get("Job Specification"));
+			reportFailure("File Not Found: " + data.get("Job Specification"));
+			//softAssert.assertTrue(false, "File Not Found: " + data.get("Job Specification"));
 			//refreshing the page
 			refreshPage();
-		}
-		
-		//Checking if the confirmation message is displayed once the job title is added
-		//Checking the confirmation message text
-		if(messageText.trim().contains(OR.getProperty("jobtitle_saved_successmsg"))){
-			//reporting pass
-			reportPass("Add Job Title Test Passed");
-		}else{
-			//reporting failure
-			reportFailure("Add Job Title Test Failed");
 		}
 	}
 	
@@ -182,25 +182,21 @@ public class Admin_JobConfigTest extends BaseTest{
 			click("jobtitles_delete_button_xpath");
 			//Clicking the confirmation delete button
 			click("jobtitles_dialog_delete_button_xpath");
+			String msg = null;
+			//Checking if the success message is displayed
+			if(isElementPresent("jobtitles_successmsg_text_xpath")){
+				//Checking message displayed
+				msg = getText("jobtitles_successmsg_text_xpath");
+			}
 			
 			//checking if the job title has gotten deleted from the job title table
 			if(getJobTitleRowNum(data.get("Job Title")) == -1 && (data.get("Expected Result").equals(OrangeHRMSConstants.TEST_EXPECTED_RESULT_PASS))){
 				//reportPass("Delete Job Title Test Passed");
 				test.log(LogStatus.INFO, data.get("Job Title") + ", deleted successfully");
 			}
-		}else if(getJobTitleRowNum(data.get("Job Title")) == -1 && (data.get("Expected Result").equals(OrangeHRMSConstants.TEST_EXPECTED_RESULT_FAIL))){
-			//reporting pass if the job title was not present and the expected result was the same
-			//reportPass("Delete Job Title Test Passed");
-			test.log(LogStatus.INFO, data.get("Job Title") + ", deleted successfully");
-		}else{
-			//for any other combination the result was be a failure
-			softAssert.assertTrue(false, "Unable to find job title: " + data.get("Job Title"));
-		}
-		
-		//Checking if the success message is displayed
-		if(isElementPresent("jobtitles_successmsg_text_xpath")){
-			//Checking message displayed
-			if(getText("jobtitles_successmsg_text_xpath").trim().equals(OR.get("jobtitle_deleted_successmsg").toString().trim())){
+			
+			//Checking if the displayed message contains the deleted success text
+			if(msg.trim().contains(OR.getProperty("jobtitle_deleted_successmsg").trim())){
 				//reporting pass
 				reportPass("Delete Job Title Test Passed");
 			}else{
@@ -208,7 +204,13 @@ public class Admin_JobConfigTest extends BaseTest{
 				reportFailure("Delete Job Title Test Failed");
 			}
 			
-			test.log(LogStatus.INFO, getText("jobtitles_successmsg_text_xpath"));
+		}else if(getJobTitleRowNum(data.get("Job Title")) == -1 && (data.get("Expected Result").equals(OrangeHRMSConstants.TEST_EXPECTED_RESULT_FAIL))){
+			//reporting pass if the job title was not present and the expected result was the same
+			reportPass("Delete Job Title Test Passed");
+			//test.log(LogStatus.INFO, data.get("Job Title") + ", deleted successfully");
+		}else{
+			//for any other combination the result was be a failure
+			softAssert.assertTrue(false, "Unable to find job title: " + data.get("Job Title"));
 		}
 	}
 	
@@ -313,11 +315,24 @@ public class Admin_JobConfigTest extends BaseTest{
 					//clicking the save button
 					click("editjobtitle_save_button_xpath");
 					//checking if the attachment was found
+					String msg = "";
+					if(isElementPresent("jobtitles_successmsg_text_xpath")){
+						msg = getText("jobtitles_successmsg_text_xpath");
+					}
 					if(!isElementPresent("jobtitles_jobspecification_attachment_filenotfound_xpath")){
 						//checking if job title is successfully changed
 						if(getJobTitleRowNum(data.get("New Job Title")) != -1){
-							reportPass("Edit Job Title Test Passed");
+							//reportPass("Edit Job Title Test Passed");
+							//Checking the notifcation message displayed contains success message
+							if(msg.trim().contains(OR.getProperty("jobtitle_edited_successmsg").trim())){
+								//reporting success
+								reportPass("Edit Job Title Test Passed");
+							}else{
+								//reporting failure
+								reportFailure("Edit Job Title Test Failed");
+							}
 						}else{
+							//Reporting failure incase the job title could not be saved
 							reportFailure(data.get("New Job Title") + " could not be saved");
 						}
 					}else{
