@@ -361,6 +361,102 @@ public class Admin_JobConfigTest extends BaseTest{
 		}
 	}
 	
+	@Test(dataProvider="getPayGrades")
+	public void addPayGradesTest(Hashtable<String, String> data){
+		
+		test = report.startTest("Pay Grades Test");
+		test.log(LogStatus.INFO, data.toString());
+		boolean payGrade = false;
+		boolean currency = false;
+		
+		//Checking the test case runmode
+		if(!DataUtil.isTestCaseRunnable(xls, "PayGradesTest")){
+			test.log(LogStatus.SKIP, "Skipping as Test Case Runmode is No");
+			throw new SkipException("Skipping as Test Case Runmode is No");
+		}
+		
+		//Checking the test data runmode
+		if(data.get("Runmode").equals(OrangeHRMSConstants.TEST_RUNMODE_NO)){
+			test.log(LogStatus.SKIP, "Skipping as Test Data Runmode is No");
+			throw new SkipException("Skipping as Test Data Runmode is No");
+		}
+		
+		//checking if user is already logged in
+		if(!isLoggedIn){
+			openBrowser(data.get("BrowserName"));
+			navigate("appurl");
+			doLogin(ENV.getProperty("username"), ENV.getProperty("password"));
+		}
+		
+		click("landingpage_admin_tab_link_xpath");
+		click("admin_jobmenu_link_xpath");
+		//clicking the paygrades menu
+		click("admin_jobmenu_paygrades_link_xpath");
+		//clicking add button
+		click("paygrades_add_button_xpath");
+		//entering the grade name
+		type("paygrades_paygradename_input_xpath", data.get("Grade Name"));
+		//clicking save button
+		click("paygrades_save_button_xpath");
+		
+		//Checking the notification message
+		if(isElementPresent("paygrades_successmsg_text_xpath")){
+			//Checking if the notification is a success message
+			if(getText("paygrades_successmsg_text_xpath").trim().contains(OR.getProperty("paygrades_saved_successmsg").trim())){
+				//Setting pay grade to true
+				payGrade = true;
+			}
+		}
+		
+		if(payGrade){
+			test.log(LogStatus.INFO, data.get("Grade Name") + " added successfully");
+		}else{
+			test.log(LogStatus.INFO, data.get("Grade Name") + " could not be added successfully");
+		}
+		
+		//Clicking add currency button
+		click("paygrades_add_currency_button_xpath");
+		//Entering the currency
+		type("paygrades_add_currency_currency_name_input_xpath", data.get("Currency"));
+		//waiting for 3 seconds
+		waitForSeconds(3);
+		//Clicking the tab button twice
+		keyStrokes("paygrades_add_currency_currency_name_input_xpath", Keys.chord(Keys.TAB,Keys.TAB));
+		//Entering min salary
+		type("paygrades_add_currency_min_salary_input_xpath", data.get("Minimum Salary"));
+		//Entering max salary
+		type("paygrades_add_currency_max_salary_input_xpath", data.get("Maximum Salary"));
+		//Clicking save button
+		click("paygrades_save_currency_button_xpath");
+		
+		//Checking the notification message
+		if(isElementPresent("paygrades_currency_successmsg_text_xpath")){
+			//Checking the text of the notification message
+			if(getText("paygrades_currency_successmsg_text_xpath").trim().contains(OR.getProperty("paygrades_currency_saved_successmsg").trim())){
+				//Setting the currency value to true
+				currency = true;
+			}
+		}
+		
+		if(currency){
+			test.log(LogStatus.INFO, data.get("Currency") + " added successfully");
+		}else{
+			softAssert.assertTrue(false, data.get("Currency") + " could not be added successfully");
+			test.log(LogStatus.INFO, data.get("Currency") + " could not be added successfully");
+		}
+		
+		//Checking if either of the paygrade or currency sections
+		//were successfully saved
+		if(payGrade || currency){
+			//Reporting a pass
+			reportPass("Pay Grade Test Passed");
+		}else{
+			//Reporting a failure
+			reportFailure("Pay Grade Test Failed");
+		}
+		
+	}
+	
 	@BeforeMethod
 	public void create(){
 		softAssert = new SoftAssert();
@@ -410,5 +506,11 @@ public class Admin_JobConfigTest extends BaseTest{
 	public Object[][] getEditData(){
 		xls = new Xls_Reader(OrangeHRMSConstants.DATA_PATH + "OrangeHRMS.xlsx");
 		return DataUtil.getData(xls, "EditTitleTest");
+	}
+	
+	@DataProvider
+	public Object[][] getPayGrades(){
+		xls = new Xls_Reader(OrangeHRMSConstants.DATA_PATH + "OrangeHRMS.xlsx");
+		return DataUtil.getData(xls, "PayGradesTest");
 	}
 }

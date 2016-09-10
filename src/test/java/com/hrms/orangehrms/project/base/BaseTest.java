@@ -213,6 +213,10 @@ public class BaseTest{
 		driver.navigate().refresh();
 	}
 	
+	public void keyStrokes(String locatorKey, String... keystrokes){
+		getElement(locatorKey).sendKeys(keystrokes);
+	}
+	
 	/********************************VALIDATIONS****************************************/
 	//This function is used to report a pass
 	public void reportPass(String message){

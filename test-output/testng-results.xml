@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="17" passed="17">
+<testng-results skipped="17" failed="0" total="18" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="625500" started-at="2016-09-09T02:12:05Z" finished-at="2016-09-09T02:22:31Z">
+  <suite name="Default suite" duration-ms="65821" started-at="2016-09-10T02:18:45Z" finished-at="2016-09-10T02:19:51Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="625500" started-at="2016-09-09T02:12:05Z" finished-at="2016-09-09T02:22:31Z">
+    <test name="Default test" duration-ms="65821" started-at="2016-09-10T02:18:45Z" finished-at="2016-09-10T02:19:51Z">
       <class name="com.hrms.orangehrms.project.testcases.Admin_JobConfigTest">
-        <test-method status="PASS" signature="startUp()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="startUp" is-config="true" duration-ms="10" started-at="2016-09-09T07:42:05Z" finished-at="2016-09-09T07:42:05Z">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="startUp" is-config="true" duration-ms="9" started-at="2016-09-10T07:48:45Z" finished-at="2016-09-10T07:48:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="2" started-at="2016-09-09T07:42:06Z" finished-at="2016-09-09T07:42:06Z">
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="2" started-at="2016-09-10T07:48:46Z" finished-at="2016-09-10T07:48:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create -->
-        <test-method status="PASS" signature="addJobTitles(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addJobTitles" duration-ms="59098" started-at="2016-09-09T07:42:06Z" data-provider="getData" finished-at="2016-09-09T07:43:05Z">
+        <test-method status="SKIP" signature="addJobTitles(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addJobTitles" duration-ms="8" started-at="2016-09-10T07:48:46Z" data-provider="getData" finished-at="2016-09-10T07:48:46Z">
           <params>
             <param index="0">
               <value>
@@ -23,10 +23,44 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping as Test Case Runmode is No]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles(Admin_JobConfigTest.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addJobTitles -->
-        <test-method status="PASS" signature="addJobTitles(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addJobTitles" duration-ms="71925" started-at="2016-09-09T07:43:05Z" data-provider="getData" finished-at="2016-09-09T07:44:17Z">
+        <test-method status="SKIP" signature="addJobTitles(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addJobTitles" duration-ms="1" started-at="2016-09-10T07:48:46Z" data-provider="getData" finished-at="2016-09-10T07:48:46Z">
           <params>
             <param index="0">
               <value>
@@ -34,26 +68,60 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping as Test Case Runmode is No]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles(Admin_JobConfigTest.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addJobTitles -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-09T07:43:05Z" finished-at="2016-09-09T07:43:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- destroy -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-09T07:43:05Z" finished-at="2016-09-09T07:43:05Z">
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-10T07:48:46Z" finished-at="2016-09-10T07:48:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-09T07:44:17Z" finished-at="2016-09-09T07:44:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- create -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-09T07:44:17Z" finished-at="2016-09-09T07:44:17Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-10T07:48:46Z" finished-at="2016-09-10T07:48:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroy -->
-        <test-method status="PASS" signature="addJobTitles(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addJobTitles" duration-ms="38167" started-at="2016-09-09T07:44:17Z" data-provider="getData" finished-at="2016-09-09T07:44:55Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-10T07:48:46Z" finished-at="2016-09-10T07:48:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destroy -->
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-10T07:48:46Z" finished-at="2016-09-10T07:48:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="SKIP" signature="addJobTitles(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addJobTitles" duration-ms="1" started-at="2016-09-10T07:48:46Z" data-provider="getData" finished-at="2016-09-10T07:48:46Z">
           <params>
             <param index="0">
               <value>
@@ -61,18 +129,48 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping as Test Case Runmode is No]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles(Admin_JobConfigTest.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addJobTitles -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-09T07:44:55Z" finished-at="2016-09-09T07:44:55Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-10T07:48:46Z" finished-at="2016-09-10T07:48:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroy -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-09T07:44:55Z" finished-at="2016-09-09T07:44:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- create -->
-        <test-method status="PASS" signature="addJobTitles(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addJobTitles" duration-ms="38265" started-at="2016-09-09T07:44:55Z" data-provider="getData" finished-at="2016-09-09T07:45:33Z">
+        <test-method status="SKIP" signature="addJobTitles(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addJobTitles" duration-ms="1" started-at="2016-09-10T07:48:46Z" data-provider="getData" finished-at="2016-09-10T07:48:46Z">
           <params>
             <param index="0">
               <value>
@@ -80,10 +178,52 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping as Test Case Runmode is No]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles(Admin_JobConfigTest.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addJobTitles -->
-        <test-method status="PASS" signature="addJobTitles(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addJobTitles" duration-ms="100338" started-at="2016-09-09T07:45:33Z" data-provider="getData" finished-at="2016-09-09T07:47:14Z">
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-10T07:48:46Z" finished-at="2016-09-10T07:48:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-10T07:48:46Z" finished-at="2016-09-10T07:48:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destroy -->
+        <test-method status="SKIP" signature="addJobTitles(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addJobTitles" duration-ms="3" started-at="2016-09-10T07:48:46Z" data-provider="getData" finished-at="2016-09-10T07:48:46Z">
           <params>
             <param index="0">
               <value>
@@ -91,26 +231,56 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping as Test Case Runmode is No]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles(Admin_JobConfigTest.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addJobTitles -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-09T07:45:33Z" finished-at="2016-09-09T07:45:33Z">
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-10T07:48:46Z" finished-at="2016-09-10T07:48:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-09T07:45:33Z" finished-at="2016-09-09T07:45:33Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-10T07:48:46Z" finished-at="2016-09-10T07:48:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroy -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-09T07:47:14Z" finished-at="2016-09-09T07:47:14Z">
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-10T07:48:46Z" finished-at="2016-09-10T07:48:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-09T07:47:14Z" finished-at="2016-09-09T07:47:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- destroy -->
-        <test-method status="PASS" signature="addJobTitles(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addJobTitles" duration-ms="38050" started-at="2016-09-09T07:47:14Z" data-provider="getData" finished-at="2016-09-09T07:47:52Z">
+        <test-method status="SKIP" signature="addJobTitles(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addJobTitles" duration-ms="1" started-at="2016-09-10T07:48:46Z" data-provider="getData" finished-at="2016-09-10T07:48:46Z">
           <params>
             <param index="0">
               <value>
@@ -118,10 +288,52 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping as Test Case Runmode is No]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles(Admin_JobConfigTest.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addJobTitles -->
-        <test-method status="PASS" signature="addJobTitles(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addJobTitles" duration-ms="71603" started-at="2016-09-09T07:47:52Z" data-provider="getData" finished-at="2016-09-09T07:49:03Z">
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-10T07:48:46Z" finished-at="2016-09-10T07:48:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-10T07:48:46Z" finished-at="2016-09-10T07:48:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destroy -->
+        <test-method status="SKIP" signature="addJobTitles(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addJobTitles" duration-ms="2" started-at="2016-09-10T07:48:46Z" data-provider="getData" finished-at="2016-09-10T07:48:46Z">
           <params>
             <param index="0">
               <value>
@@ -129,26 +341,67 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping as Test Case Runmode is No]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addJobTitles(Admin_JobConfigTest.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addJobTitles -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-09T07:47:52Z" finished-at="2016-09-09T07:47:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- create -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-09T07:47:52Z" finished-at="2016-09-09T07:47:52Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-10T07:48:46Z" finished-at="2016-09-10T07:48:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroy -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-09T07:49:03Z" finished-at="2016-09-09T07:49:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- destroy -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-09T07:49:04Z" finished-at="2016-09-09T07:49:04Z">
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-10T07:48:46Z" finished-at="2016-09-10T07:48:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create -->
-        <test-method status="PASS" signature="deleteJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="deleteJobTitleTest" duration-ms="9436" started-at="2016-09-09T07:49:04Z" data-provider="getDeleteData" finished-at="2016-09-09T07:49:13Z">
+        <test-method status="PASS" signature="addPayGradesTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addPayGradesTest" duration-ms="63840" started-at="2016-09-10T07:48:46Z" data-provider="getPayGrades" finished-at="2016-09-10T07:49:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Currency=INR, BrowserName=Chrome, Runmode=Y, Maximum Salary=100000, Minimum Salary=ten thousand, Grade Name=Class 3}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPayGradesTest -->
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="1" started-at="2016-09-10T07:49:50Z" finished-at="2016-09-10T07:49:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destroy -->
+        <test-method status="SKIP" signature="deleteJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="deleteJobTitleTest" duration-ms="2" started-at="2016-09-10T07:49:50Z" data-provider="getDeleteData" finished-at="2016-09-10T07:49:50Z">
           <params>
             <param index="0">
               <value>
@@ -156,14 +409,48 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping as Test Case Runmode is No]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.deleteJobTitleTest(Admin_JobConfigTest.java:158)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteJobTitleTest -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-09T07:49:13Z" finished-at="2016-09-09T07:49:13Z">
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-10T07:49:50Z" finished-at="2016-09-10T07:49:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- destroy -->
-        <test-method status="PASS" signature="deleteJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="deleteJobTitleTest" duration-ms="5646" started-at="2016-09-09T07:49:13Z" data-provider="getDeleteData" finished-at="2016-09-09T07:49:19Z">
+        </test-method> <!-- create -->
+        <test-method status="SKIP" signature="deleteJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="deleteJobTitleTest" duration-ms="1" started-at="2016-09-10T07:49:50Z" data-provider="getDeleteData" finished-at="2016-09-10T07:49:50Z">
           <params>
             <param index="0">
               <value>
@@ -171,18 +458,60 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping as Test Case Runmode is No]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.deleteJobTitleTest(Admin_JobConfigTest.java:158)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteJobTitleTest -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-09T07:49:13Z" finished-at="2016-09-09T07:49:13Z">
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-10T07:49:50Z" finished-at="2016-09-10T07:49:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-09T07:49:19Z" finished-at="2016-09-09T07:49:19Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-10T07:49:50Z" finished-at="2016-09-10T07:49:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroy -->
-        <test-method status="PASS" signature="deleteJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="deleteJobTitleTest" duration-ms="5595" started-at="2016-09-09T07:49:19Z" data-provider="getDeleteData" finished-at="2016-09-09T07:49:24Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="1" started-at="2016-09-10T07:49:50Z" finished-at="2016-09-10T07:49:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destroy -->
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-10T07:49:50Z" finished-at="2016-09-10T07:49:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="SKIP" signature="deleteJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="deleteJobTitleTest" duration-ms="1" started-at="2016-09-10T07:49:50Z" data-provider="getDeleteData" finished-at="2016-09-10T07:49:50Z">
           <params>
             <param index="0">
               <value>
@@ -190,18 +519,48 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping as Test Case Runmode is No]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.deleteJobTitleTest(Admin_JobConfigTest.java:158)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteJobTitleTest -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-09T07:49:19Z" finished-at="2016-09-09T07:49:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- create -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-09T07:49:24Z" finished-at="2016-09-09T07:49:24Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-10T07:49:50Z" finished-at="2016-09-10T07:49:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroy -->
-        <test-method status="PASS" signature="editJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="editJobTitleTest" duration-ms="7730" started-at="2016-09-09T07:49:24Z" data-provider="getEditData" finished-at="2016-09-09T07:49:32Z">
+        <test-method status="SKIP" signature="editJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="editJobTitleTest" duration-ms="2" started-at="2016-09-10T07:49:50Z" data-provider="getEditData" finished-at="2016-09-10T07:49:50Z">
           <params>
             <param index="0">
               <value>
@@ -209,14 +568,56 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping as Test Case Runmode is No]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.editJobTitleTest(Admin_JobConfigTest.java:226)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editJobTitleTest -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-09T07:49:24Z" finished-at="2016-09-09T07:49:24Z">
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-10T07:49:50Z" finished-at="2016-09-10T07:49:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create -->
-        <test-method status="PASS" signature="editJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="editJobTitleTest" duration-ms="41446" started-at="2016-09-09T07:49:32Z" data-provider="getEditData" finished-at="2016-09-09T07:50:13Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-10T07:49:50Z" finished-at="2016-09-10T07:49:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destroy -->
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-10T07:49:50Z" finished-at="2016-09-10T07:49:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="SKIP" signature="editJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="editJobTitleTest" duration-ms="1" started-at="2016-09-10T07:49:50Z" data-provider="getEditData" finished-at="2016-09-10T07:49:50Z">
           <params>
             <param index="0">
               <value>
@@ -224,26 +625,52 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping as Test Case Runmode is No]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.editJobTitleTest(Admin_JobConfigTest.java:226)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editJobTitleTest -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-09T07:49:32Z" finished-at="2016-09-09T07:49:32Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-10T07:49:50Z" finished-at="2016-09-10T07:49:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroy -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-09T07:49:32Z" finished-at="2016-09-09T07:49:32Z">
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-10T07:49:50Z" finished-at="2016-09-10T07:49:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-09T07:50:13Z" finished-at="2016-09-09T07:50:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- destroy -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-09T07:50:13Z" finished-at="2016-09-09T07:50:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- create -->
-        <test-method status="PASS" signature="editJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="editJobTitleTest" duration-ms="5708" started-at="2016-09-09T07:50:13Z" data-provider="getEditData" finished-at="2016-09-09T07:50:19Z">
+        <test-method status="SKIP" signature="editJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="editJobTitleTest" duration-ms="0" started-at="2016-09-10T07:49:50Z" data-provider="getEditData" finished-at="2016-09-10T07:49:50Z">
           <params>
             <param index="0">
               <value>
@@ -251,18 +678,52 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping as Test Case Runmode is No]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.editJobTitleTest(Admin_JobConfigTest.java:226)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editJobTitleTest -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-09T07:50:19Z" finished-at="2016-09-09T07:50:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- destroy -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="1" started-at="2016-09-09T07:50:19Z" finished-at="2016-09-09T07:50:19Z">
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="1" started-at="2016-09-10T07:49:50Z" finished-at="2016-09-10T07:49:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create -->
-        <test-method status="PASS" signature="editJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="editJobTitleTest" duration-ms="42040" started-at="2016-09-09T07:50:19Z" data-provider="getEditData" finished-at="2016-09-09T07:51:01Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-10T07:49:50Z" finished-at="2016-09-10T07:49:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destroy -->
+        <test-method status="SKIP" signature="editJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="editJobTitleTest" duration-ms="0" started-at="2016-09-10T07:49:50Z" data-provider="getEditData" finished-at="2016-09-10T07:49:50Z">
           <params>
             <param index="0">
               <value>
@@ -270,14 +731,48 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping as Test Case Runmode is No]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.editJobTitleTest(Admin_JobConfigTest.java:226)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editJobTitleTest -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="1" started-at="2016-09-09T07:51:01Z" finished-at="2016-09-09T07:51:01Z">
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-10T07:49:50Z" finished-at="2016-09-10T07:49:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- destroy -->
-        <test-method status="PASS" signature="editJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="editJobTitleTest" duration-ms="41597" started-at="2016-09-09T07:51:01Z" data-provider="getEditData" finished-at="2016-09-09T07:51:43Z">
+        </test-method> <!-- create -->
+        <test-method status="SKIP" signature="editJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="editJobTitleTest" duration-ms="1" started-at="2016-09-10T07:49:50Z" data-provider="getEditData" finished-at="2016-09-10T07:49:50Z">
           <params>
             <param index="0">
               <value>
@@ -285,22 +780,56 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping as Test Case Runmode is No]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.editJobTitleTest(Admin_JobConfigTest.java:226)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editJobTitleTest -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-09T07:51:01Z" finished-at="2016-09-09T07:51:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- create -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="1" started-at="2016-09-09T07:51:43Z" finished-at="2016-09-09T07:51:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- create -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-09T07:51:43Z" finished-at="2016-09-09T07:51:43Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-10T07:49:50Z" finished-at="2016-09-10T07:49:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroy -->
-        <test-method status="PASS" signature="editJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="editJobTitleTest" duration-ms="5636" started-at="2016-09-09T07:51:43Z" data-provider="getEditData" finished-at="2016-09-09T07:51:48Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="1" started-at="2016-09-10T07:49:50Z" finished-at="2016-09-10T07:49:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destroy -->
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-10T07:49:50Z" finished-at="2016-09-10T07:49:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="SKIP" signature="editJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="editJobTitleTest" duration-ms="5" started-at="2016-09-10T07:49:50Z" data-provider="getEditData" finished-at="2016-09-10T07:49:50Z">
           <params>
             <param index="0">
               <value>
@@ -308,18 +837,48 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping as Test Case Runmode is No]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.editJobTitleTest(Admin_JobConfigTest.java:226)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editJobTitleTest -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="1" started-at="2016-09-09T07:51:48Z" finished-at="2016-09-09T07:51:48Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="1" started-at="2016-09-10T07:49:50Z" finished-at="2016-09-10T07:49:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroy -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-09T07:51:48Z" finished-at="2016-09-09T07:51:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- create -->
-        <test-method status="PASS" signature="editJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="editJobTitleTest" duration-ms="41292" started-at="2016-09-09T07:51:48Z" data-provider="getEditData" finished-at="2016-09-09T07:52:30Z">
+        <test-method status="SKIP" signature="editJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="editJobTitleTest" duration-ms="1" started-at="2016-09-10T07:49:50Z" data-provider="getEditData" finished-at="2016-09-10T07:49:50Z">
           <params>
             <param index="0">
               <value>
@@ -327,14 +886,52 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping as Test Case Runmode is No]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.editJobTitleTest(Admin_JobConfigTest.java:226)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editJobTitleTest -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-09T07:52:30Z" finished-at="2016-09-09T07:52:30Z">
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-10T07:49:50Z" finished-at="2016-09-10T07:49:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-10T07:49:50Z" finished-at="2016-09-10T07:49:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroy -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="tearDown" is-config="true" duration-ms="1184" started-at="2016-09-09T07:52:30Z" finished-at="2016-09-09T07:52:31Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="tearDown" is-config="true" duration-ms="1281" started-at="2016-09-10T07:49:50Z" finished-at="2016-09-10T07:49:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
