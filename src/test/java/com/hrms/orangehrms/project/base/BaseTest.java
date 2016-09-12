@@ -331,4 +331,20 @@ public class BaseTest{
 			}
 		}
 	}
+	
+	public int getDataRowNum(String dataToBeFound){
+		
+		test.log(LogStatus.INFO, "Searching Data: " + dataToBeFound);
+		List<WebElement> allJobTitles = getElements("jobtitles_jobtitle_table_xpath");
+		
+		for(int i = 0; i < allJobTitles.size(); i++){
+			if(allJobTitles.get(i).getText().trim().equals(dataToBeFound.trim())){
+				test.log(LogStatus.INFO, "Data Found: " + dataToBeFound);
+				return (i+1);
+			}
+		}
+		//will return -1 if the job title is not found in the job titles table
+		test.log(LogStatus.INFO, "Data Not Found: " + dataToBeFound);
+		return -1;
+	}
 }

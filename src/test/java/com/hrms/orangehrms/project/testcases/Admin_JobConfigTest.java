@@ -2,7 +2,7 @@
  * FILENAME:		Admin_JobConfig.java
  * CREATED BY:		Joel Julian
  * CREATED DATE:	30-AUG-2016
- * MODIFIED DATE:	09-SEP-2016
+ * MODIFIED DATE:	11-SEP-2016
  * DESCRIPTION:		This file contains all job configuration related test cases
  *                  whose actions would be executed via an admin 
  * 					
@@ -399,62 +399,105 @@ public class Admin_JobConfigTest extends BaseTest{
 		//clicking save button
 		click("paygrades_save_button_xpath");
 		
-		//Checking the notification message
+		//Checking if any error message appears
 		if(isElementPresent("paygrades_successmsg_text_xpath")){
 			//Checking if the notification is a success message
 			if(getText("paygrades_successmsg_text_xpath").trim().contains(OR.getProperty("paygrades_saved_successmsg").trim())){
 				//Setting pay grade to true
 				payGrade = true;
 			}
-		}
-		
-		if(payGrade){
-			test.log(LogStatus.INFO, data.get("Grade Name") + " added successfully");
+			
+			if(payGrade){
+				test.log(LogStatus.INFO, data.get("Grade Name") + " added successfully");
+			}
+			
+			if(!data.get("Currency").equals("")){
+				//Clicking add currency button
+				click("paygrades_add_currency_button_xpath");
+				//Entering the currency
+				type("paygrades_add_currency_currency_name_input_xpath", data.get("Currency"));
+				//waiting for 3 seconds
+				waitForSeconds(3);
+				//Clicking the tab button twice
+				keyStrokes("paygrades_add_currency_currency_name_input_xpath", Keys.chord(Keys.TAB,Keys.TAB));
+				//Entering min salary
+				type("paygrades_add_currency_min_salary_input_xpath", data.get("Minimum Salary"));
+				//Entering max salary
+				type("paygrades_add_currency_max_salary_input_xpath", data.get("Maximum Salary"));
+				//Clicking save button
+				click("paygrades_save_currency_button_xpath");
+				
+				//Checking the notification message
+				if(isElementPresent("paygrades_currency_successmsg_text_xpath")){
+					//Checking the text of the notification message
+					if(getText("paygrades_currency_successmsg_text_xpath").trim().contains(OR.getProperty("paygrades_currency_saved_successmsg").trim())){
+						//Setting the currency value to true
+						currency = true;
+					}
+				}else if(isElementPresent("paygrades_currency_max_salary_errormsg_text_xpath")){
+					//checking if error message is present
+					//Checking if the max amount entered is greater than min amount
+					if(getText("paygrades_currency_max_salary_errormsg_text_xpath").trim().equals(OR.getProperty("paygrades_currency_max_salary_errormsg").trim())){
+						test.log(LogStatus.INFO, "Maximum Salary cannot be lesser than Minimum Salary");
+						//taking a screenshot
+						//takeScreenshot();
+					}
+				}
+				
+				if(currency){
+					test.log(LogStatus.INFO, data.get("Currency") + " added successfully");
+				}else{
+					//softAssert.assertTrue(false, data.get("Currency") + " could not be added successfully");
+					test.log(LogStatus.INFO, data.get("Currency") + " could not be added successfully");
+				}
+			}else{
+				currency = true;
+			}
+		}else if(isElementPresent("paygrades_paygrade_errormsg_text_xpath")){
+			//Checking if pay grade name field is left blank
+			if(!getText("paygrades_paygrade_errormsg_text_xpath").trim().equals(OR.getProperty("jobtitle_required_errormsg").trim())){
+				//Checking if an existing pay grade name is entered
+				if(getText("paygrades_paygrade_errormsg_text_xpath").trim().equals(OR.getProperty("addjobtitle_errormsg").trim())){
+					//Checking if duplicate pay grade name was entered
+					if(data.get("Duplicate").trim().equals("Y")){
+						//reporting pass
+						//reportPass(OR.getProperty("addjobtitle_errormsg") + ", error message displayed for pay grade: "  + data.get("Grade Name"));
+						test.log(LogStatus.INFO, OR.getProperty("addjobtitle_errormsg") + ", error message displayed for pay grade: "  + data.get("Grade Name"));
+						payGrade = true;
+					}else{
+						//reporting failure
+						//reportFailure(OR.getProperty("addjobtitle_errormsg") + ", error message displayed for pay grade: "  + data.get("Grade Name"));
+						test.log(LogStatus.INFO, OR.getProperty("addjobtitle_errormsg") + ", error message displayed for pay grade: "  + data.get("Grade Name"));
+						//softAssert.assertTrue(false, OR.getProperty("addjobtitle_errormsg") + ", error message displayed for pay grade: "  + data.get("Grade Name"));
+					}
+				}
+			}else{
+				//logging result as pay grade is mandatory
+				test.log(LogStatus.INFO, "Pay Grade Name is Mandatory");
+			}
+			
 		}else{
 			test.log(LogStatus.INFO, data.get("Grade Name") + " could not be added successfully");
 		}
 		
-		//Clicking add currency button
-		click("paygrades_add_currency_button_xpath");
-		//Entering the currency
-		type("paygrades_add_currency_currency_name_input_xpath", data.get("Currency"));
-		//waiting for 3 seconds
-		waitForSeconds(3);
-		//Clicking the tab button twice
-		keyStrokes("paygrades_add_currency_currency_name_input_xpath", Keys.chord(Keys.TAB,Keys.TAB));
-		//Entering min salary
-		type("paygrades_add_currency_min_salary_input_xpath", data.get("Minimum Salary"));
-		//Entering max salary
-		type("paygrades_add_currency_max_salary_input_xpath", data.get("Maximum Salary"));
-		//Clicking save button
-		click("paygrades_save_currency_button_xpath");
-		
-		//Checking the notification message
-		if(isElementPresent("paygrades_currency_successmsg_text_xpath")){
-			//Checking the text of the notification message
-			if(getText("paygrades_currency_successmsg_text_xpath").trim().contains(OR.getProperty("paygrades_currency_saved_successmsg").trim())){
-				//Setting the currency value to true
-				currency = true;
-			}
-		}
-		
-		if(currency){
-			test.log(LogStatus.INFO, data.get("Currency") + " added successfully");
-		}else{
-			softAssert.assertTrue(false, data.get("Currency") + " could not be added successfully");
-			test.log(LogStatus.INFO, data.get("Currency") + " could not be added successfully");
-		}
-		
 		//Checking if either of the paygrade or currency sections
 		//were successfully saved
-		if(payGrade || currency){
+		if(payGrade && currency){
+			click("admin_jobmenu_link_xpath");
+			//clicking the paygrades menu
+			click("admin_jobmenu_paygrades_link_xpath");
+			//Finding on which row number is the grade name
+			int rowNum = getDataRowNum(data.get("Grade Name"));
+			//Checking if the grade name exists in the table
+			if(rowNum != -1){
+				test.log(LogStatus.INFO, "Pay Grade: " + data.get("Grade Name") + " found on row no: " + rowNum);
+			}
 			//Reporting a pass
 			reportPass("Pay Grade Test Passed");
 		}else{
 			//Reporting a failure
 			reportFailure("Pay Grade Test Failed");
 		}
-		
 	}
 	
 	@BeforeMethod
