@@ -435,12 +435,22 @@ public class Admin_JobConfigTest extends BaseTest{
 						currency = true;
 					}
 				}else if(isElementPresent("paygrades_currency_max_salary_errormsg_text_xpath")){
-					//checking if error message is present
+					//checking if error message is present for the max salary field
 					//Checking if the max amount entered is greater than min amount
 					if(getText("paygrades_currency_max_salary_errormsg_text_xpath").trim().equals(OR.getProperty("paygrades_currency_max_salary_errormsg").trim())){
 						test.log(LogStatus.INFO, "Maximum Salary cannot be lesser than Minimum Salary");
 						//taking a screenshot
 						//takeScreenshot();
+					}
+					//Checking for positive number error message
+					if(getText("paygrades_currency_max_salary_errormsg_text_xpath").trim().equals(OR.getProperty("paygrades_currency_positive_number_errormsg").trim())){
+						test.log(LogStatus.INFO, "Enter Maximum Salary As Numbers Only");
+					}					
+				}else if(isElementPresent("paygrades_currency_min_salary_errormsg_text_xpath")){
+					//checking if the error message is present for the min salary field
+					//Checking for positive number error message
+					if(getText("paygrades_currency_min_salary_errormsg_text_xpath").trim().equals(OR.getProperty("paygrades_currency_positive_number_errormsg").trim())){
+						test.log(LogStatus.INFO, "Enter Minimum Salary As Numbers Only");
 					}
 				}
 				
