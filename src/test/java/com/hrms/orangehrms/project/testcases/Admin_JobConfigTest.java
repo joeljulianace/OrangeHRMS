@@ -2,7 +2,7 @@
  * FILENAME:		Admin_JobConfig.java
  * CREATED BY:		Joel Julian
  * CREATED DATE:	30-AUG-2016
- * MODIFIED DATE:	11-SEP-2016
+ * MODIFIED DATE:	14-SEP-2016
  * DESCRIPTION:		This file contains all job configuration related test cases
  *                  whose actions would be executed via an admin 
  * 					
@@ -432,7 +432,13 @@ public class Admin_JobConfigTest extends BaseTest{
 					//Checking the text of the notification message
 					if(getText("paygrades_currency_successmsg_text_xpath").trim().contains(OR.getProperty("paygrades_currency_saved_successmsg").trim())){
 						//Setting the currency value to true
-						currency = true;
+						int rowNum = getDataRowNum(data.get("Currency"));
+						if(rowNum != -1){
+							test.log(LogStatus.INFO, "Currency: " + data.get("Currency") + " found");
+							currency = true;
+						}else{
+							test.log(LogStatus.INFO, "Currency: " + data.get("Currency") + " could not be found");
+						}
 					}
 				}else if(isElementPresent("paygrades_currency_max_salary_errormsg_text_xpath")){
 					//checking if error message is present for the max salary field
@@ -492,7 +498,7 @@ public class Admin_JobConfigTest extends BaseTest{
 		
 		//Checking if either of the paygrade or currency sections
 		//were successfully saved
-		if(payGrade && currency){
+		if(payGrade || currency){
 			click("admin_jobmenu_link_xpath");
 			//clicking the paygrades menu
 			click("admin_jobmenu_paygrades_link_xpath");
@@ -507,6 +513,81 @@ public class Admin_JobConfigTest extends BaseTest{
 		}else{
 			//Reporting a failure
 			reportFailure("Pay Grade Test Failed");
+		}
+	}
+	
+	@Test(dataProvider="getDeletePayGrades")
+	public void deletePayGrade(Hashtable<String, String> data){
+		
+		boolean actualResult = false;
+		
+		test = report.startTest("Delete Pay Grades Test");
+		test.log(LogStatus.INFO, data.toString());
+		
+		//Checking the test case runmode
+		if(!DataUtil.isTestCaseRunnable(xls, "DeletePayGradesTest")){
+			test.log(LogStatus.SKIP, "Skipping as Test Case Runmode is No");
+			throw new SkipException("Skipping as Test Case Runmode is No");
+		}
+		
+		//Checking the test data runmode
+		if(data.get("Runmode").equals(OrangeHRMSConstants.TEST_RUNMODE_NO)){
+			test.log(LogStatus.SKIP, "Skipping as Test Data Runmode is No");
+			throw new SkipException("Skipping as Test Data Runmode is No");
+		}
+		
+		//checking if user is already logged in
+		if(!isLoggedIn){
+			openBrowser(data.get("BrowserName"));
+			navigate("appurl");
+			doLogin(ENV.getProperty("username"), ENV.getProperty("password"));
+		}
+		
+		click("landingpage_admin_tab_link_xpath");
+		click("admin_jobmenu_link_xpath");
+		//clicking the paygrades menu
+		click("admin_jobmenu_paygrades_link_xpath");
+		
+		//Getting the row of the grade
+		int rowNum = getDataRowNum(data.get("Grade Name"));
+		
+		//Checking if the pay grade exists in the table
+		if(rowNum != -1){
+			//selecting the pay grade
+			selectData(data.get("Grade Name"));
+			//Clicking the delete button
+			click("jobtitles_delete_button_xpath");
+			//Clicking the confirm delete button
+			click("jobtitles_dialog_delete_button_xpath");
+			
+			//Checking if the success message is present
+			if(isElementPresent("jobtitles_successmsg_text_xpath")){
+				//Extracting the text and checking the message
+				if(getText("jobtitles_successmsg_text_xpath").trim().contains(OR.getProperty("jobtitle_deleted_successmsg").trim())){
+					//Checking if the pay grade has been deleted
+					rowNum = getDataRowNum(data.get("Grade Name"));
+					if(rowNum == -1){
+						//test.log(LogStatus.INFO, "Pay Grade: " + data.get("Grade Name") + " deleted successfully");
+						actualResult = true;
+					}
+				}else{
+					test.log(LogStatus.INFO, "Pay Grade: " + data.get("Grade Name") + " could not be deleted successfully");
+					//reportFailure("Pay Grade: " + data.get("Grade Name") + " could not be deleted successfully");
+				}
+			}
+		}else{
+			test.log(LogStatus.INFO, "Grade Name: " + data.get("Grade Name") + " not found");
+			//reportFailure("Grade Name: " + data.get("Grade Name") + " not found");
+		}
+		
+		//Checking the expected results
+		//and reporting the status
+		if(data.get("Expected Result").trim().equals(OrangeHRMSConstants.TEST_EXPECTED_RESULT_PASS) && actualResult){
+			reportPass("Pay Grade: " + data.get("Grade Name") + " deleted successfully");
+		}else if(data.get("Expected Result").trim().equals(OrangeHRMSConstants.TEST_EXPECTED_RESULT_FAIL) && !actualResult){
+			reportPass("Pay Grade: " + data.get("Grade Name") + " could not be deleted. As pay grade was not present");
+		}else{
+			reportFailure("Grade Name: " + data.get("Grade Name") + " not found");
 		}
 	}
 	
@@ -565,5 +646,11 @@ public class Admin_JobConfigTest extends BaseTest{
 	public Object[][] getPayGrades(){
 		xls = new Xls_Reader(OrangeHRMSConstants.DATA_PATH + "OrangeHRMS.xlsx");
 		return DataUtil.getData(xls, "PayGradesTest");
+	}
+	
+	@DataProvider
+	public Object[][] getDeletePayGrades(){
+		xls = new Xls_Reader(OrangeHRMSConstants.DATA_PATH + "OrangeHRMS.xlsx");
+		return DataUtil.getData(xls, "DeletePayGradesTest");
 	}
 }

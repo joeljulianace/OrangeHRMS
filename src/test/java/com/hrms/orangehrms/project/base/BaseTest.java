@@ -2,14 +2,12 @@
  * FILENAME:		BaseTest.java
  * CREATED BY:		Joel Julian
  * CREATED DATE:	29-AUG-2016
- * MODIFIED DATE:	05-SEP-2016
+ * MODIFIED DATE:	14-SEP-2016
  * DESCRIPTION:		This file will contain all the resuable functions
  * 					All test cases will extend this file
  * */
 package com.hrms.orangehrms.project.base;
 
-import java.awt.AWTException;
-import java.awt.Robot;
 import java.io.File;
 import java.io.FileInputStream;
 import java.util.Date;
@@ -20,21 +18,17 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Actions;
-
 import com.hrms.orangehrms.constants.OrangeHRMSConstants;
 import com.hrms.orangehrms.project.util.ExtentManager;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-import com.sun.glass.events.KeyEvent;
 
 public class BaseTest{
 	
@@ -346,5 +340,15 @@ public class BaseTest{
 		//will return -1 if the job title is not found in the job titles table
 		test.log(LogStatus.INFO, "Data Not Found: " + dataToBeFound);
 		return -1;
+	}
+	
+	//This function selects the check box for the given job title
+	public void selectData(String dataToBeSelected){
+		
+		test.log(LogStatus.INFO, "Selecting the data: " + dataToBeSelected);
+		int rowNum = getJobTitleRowNum(dataToBeSelected);
+		
+		driver.findElement(By.xpath((OR.getProperty("jobtitles_jobtitle_table_part1_xpath")) + rowNum + OR.getProperty("jobtitles_jobtitle_table_part2_xpath"))).click();
+		test.log(LogStatus.INFO, "Data Selected: " + dataToBeSelected);		
 	}
 }

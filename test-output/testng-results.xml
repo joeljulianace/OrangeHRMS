@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="17" failed="0" total="23" passed="6">
+<testng-results skipped="23" failed="0" total="25" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="241238" started-at="2016-09-13T02:02:37Z" finished-at="2016-09-13T02:06:38Z">
+  <suite name="Default suite" duration-ms="31836" started-at="2016-09-14T02:19:11Z" finished-at="2016-09-14T02:19:43Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="241238" started-at="2016-09-13T02:02:37Z" finished-at="2016-09-13T02:06:38Z">
+    <test name="Default test" duration-ms="31836" started-at="2016-09-14T02:19:11Z" finished-at="2016-09-14T02:19:43Z">
       <class name="com.hrms.orangehrms.project.testcases.Admin_JobConfigTest">
-        <test-method status="PASS" signature="startUp()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="startUp" is-config="true" duration-ms="9" started-at="2016-09-13T07:32:37Z" finished-at="2016-09-13T07:32:37Z">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="startUp" is-config="true" duration-ms="9" started-at="2016-09-14T07:49:11Z" finished-at="2016-09-14T07:49:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="2" started-at="2016-09-13T07:32:37Z" finished-at="2016-09-13T07:32:37Z">
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="2" started-at="2016-09-14T07:49:12Z" finished-at="2016-09-14T07:49:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create -->
-        <test-method status="SKIP" signature="addJobTitles(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addJobTitles" duration-ms="9" started-at="2016-09-13T07:32:37Z" data-provider="getData" finished-at="2016-09-13T07:32:37Z">
+        <test-method status="SKIP" signature="addJobTitles(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addJobTitles" duration-ms="9" started-at="2016-09-14T07:49:12Z" data-provider="getData" finished-at="2016-09-14T07:49:12Z">
           <params>
             <param index="0">
               <value>
@@ -60,7 +60,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addJobTitles -->
-        <test-method status="SKIP" signature="addJobTitles(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addJobTitles" duration-ms="1" started-at="2016-09-13T07:32:37Z" data-provider="getData" finished-at="2016-09-13T07:32:37Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="1" started-at="2016-09-14T07:49:12Z" finished-at="2016-09-14T07:49:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destroy -->
+        <test-method status="SKIP" signature="addJobTitles(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addJobTitles" duration-ms="1" started-at="2016-09-14T07:49:12Z" data-provider="getData" finished-at="2016-09-14T07:49:12Z">
           <params>
             <param index="0">
               <value>
@@ -105,19 +109,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addJobTitles -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-13T07:32:37Z" finished-at="2016-09-13T07:32:37Z">
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-14T07:49:12Z" finished-at="2016-09-14T07:49:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-13T07:32:37Z" finished-at="2016-09-13T07:32:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- destroy -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-13T07:32:37Z" finished-at="2016-09-13T07:32:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- create -->
-        <test-method status="SKIP" signature="addJobTitles(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addJobTitles" duration-ms="2" started-at="2016-09-13T07:32:37Z" data-provider="getData" finished-at="2016-09-13T07:32:37Z">
+        <test-method status="SKIP" signature="addJobTitles(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addJobTitles" duration-ms="3" started-at="2016-09-14T07:49:12Z" data-provider="getData" finished-at="2016-09-14T07:49:12Z">
           <params>
             <param index="0">
               <value>
@@ -162,19 +158,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addJobTitles -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-13T07:32:37Z" finished-at="2016-09-13T07:32:37Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-14T07:49:12Z" finished-at="2016-09-14T07:49:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroy -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-13T07:32:37Z" finished-at="2016-09-13T07:32:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- destroy -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="1" started-at="2016-09-13T07:32:37Z" finished-at="2016-09-13T07:32:37Z">
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-14T07:49:12Z" finished-at="2016-09-14T07:49:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create -->
-        <test-method status="SKIP" signature="addJobTitles(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addJobTitles" duration-ms="2" started-at="2016-09-13T07:32:37Z" data-provider="getData" finished-at="2016-09-13T07:32:37Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-14T07:49:12Z" finished-at="2016-09-14T07:49:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destroy -->
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-14T07:49:12Z" finished-at="2016-09-14T07:49:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="SKIP" signature="addJobTitles(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addJobTitles" duration-ms="1" started-at="2016-09-14T07:49:12Z" data-provider="getData" finished-at="2016-09-14T07:49:12Z">
           <params>
             <param index="0">
               <value>
@@ -219,11 +219,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addJobTitles -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="1" started-at="2016-09-13T07:32:37Z" finished-at="2016-09-13T07:32:37Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="1" started-at="2016-09-14T07:49:12Z" finished-at="2016-09-14T07:49:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroy -->
-        <test-method status="SKIP" signature="addJobTitles(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addJobTitles" duration-ms="3" started-at="2016-09-13T07:32:37Z" data-provider="getData" finished-at="2016-09-13T07:32:37Z">
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-14T07:49:12Z" finished-at="2016-09-14T07:49:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="SKIP" signature="addJobTitles(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addJobTitles" duration-ms="4" started-at="2016-09-14T07:49:12Z" data-provider="getData" finished-at="2016-09-14T07:49:12Z">
           <params>
             <param index="0">
               <value>
@@ -268,15 +272,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addJobTitles -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-13T07:32:37Z" finished-at="2016-09-13T07:32:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- create -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-13T07:32:37Z" finished-at="2016-09-13T07:32:37Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-14T07:49:12Z" finished-at="2016-09-14T07:49:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroy -->
-        <test-method status="SKIP" signature="addJobTitles(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addJobTitles" duration-ms="1" started-at="2016-09-13T07:32:37Z" data-provider="getData" finished-at="2016-09-13T07:32:37Z">
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-14T07:49:12Z" finished-at="2016-09-14T07:49:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="SKIP" signature="addJobTitles(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addJobTitles" duration-ms="2" started-at="2016-09-14T07:49:12Z" data-provider="getData" finished-at="2016-09-14T07:49:12Z">
           <params>
             <param index="0">
               <value>
@@ -321,19 +325,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addJobTitles -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-13T07:32:37Z" finished-at="2016-09-13T07:32:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- create -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-13T07:32:37Z" finished-at="2016-09-13T07:32:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- create -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-13T07:32:37Z" finished-at="2016-09-13T07:32:37Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="1" started-at="2016-09-14T07:49:12Z" finished-at="2016-09-14T07:49:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroy -->
-        <test-method status="SKIP" signature="addJobTitles(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addJobTitles" duration-ms="1" started-at="2016-09-13T07:32:37Z" data-provider="getData" finished-at="2016-09-13T07:32:37Z">
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="1" started-at="2016-09-14T07:49:12Z" finished-at="2016-09-14T07:49:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="SKIP" signature="addJobTitles(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addJobTitles" duration-ms="1" started-at="2016-09-14T07:49:12Z" data-provider="getData" finished-at="2016-09-14T07:49:12Z">
           <params>
             <param index="0">
               <value>
@@ -378,15 +378,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addJobTitles -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-13T07:32:37Z" finished-at="2016-09-13T07:32:37Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-14T07:49:12Z" finished-at="2016-09-14T07:49:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroy -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-13T07:32:37Z" finished-at="2016-09-13T07:32:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- create -->
-        <test-method status="PASS" signature="addPayGradesTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addPayGradesTest" duration-ms="53940" started-at="2016-09-13T07:32:37Z" data-provider="getPayGrades" finished-at="2016-09-13T07:33:31Z">
+        <test-method status="SKIP" signature="addPayGradesTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addPayGradesTest" duration-ms="2" started-at="2016-09-14T07:49:12Z" data-provider="getPayGrades" finished-at="2016-09-14T07:49:12Z">
           <params>
             <param index="0">
               <value>
@@ -394,18 +390,56 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping as Test Case Runmode is No]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addPayGradesTest(Admin_JobConfigTest.java:375)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addPayGradesTest -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-13T07:33:31Z" finished-at="2016-09-13T07:33:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- destroy -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-13T07:33:31Z" finished-at="2016-09-13T07:33:31Z">
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-14T07:49:12Z" finished-at="2016-09-14T07:49:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create -->
-        <test-method status="PASS" signature="addPayGradesTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addPayGradesTest" duration-ms="25062" started-at="2016-09-13T07:33:31Z" data-provider="getPayGrades" finished-at="2016-09-13T07:33:56Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-14T07:49:12Z" finished-at="2016-09-14T07:49:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destroy -->
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-14T07:49:12Z" finished-at="2016-09-14T07:49:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="SKIP" signature="addPayGradesTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addPayGradesTest" duration-ms="1" started-at="2016-09-14T07:49:12Z" data-provider="getPayGrades" finished-at="2016-09-14T07:49:12Z">
           <params>
             <param index="0">
               <value>
@@ -413,52 +447,150 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping as Test Case Runmode is No]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addPayGradesTest(Admin_JobConfigTest.java:375)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addPayGradesTest -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-13T07:33:56Z" finished-at="2016-09-13T07:33:56Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="1" started-at="2016-09-14T07:49:12Z" finished-at="2016-09-14T07:49:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroy -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-13T07:33:56Z" finished-at="2016-09-13T07:33:56Z">
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-14T07:49:12Z" finished-at="2016-09-14T07:49:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create -->
-        <test-method status="PASS" signature="addPayGradesTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addPayGradesTest" duration-ms="48058" started-at="2016-09-13T07:33:56Z" data-provider="getPayGrades" finished-at="2016-09-13T07:34:44Z">
+        <test-method status="SKIP" signature="addPayGradesTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addPayGradesTest" duration-ms="1" started-at="2016-09-14T07:49:12Z" data-provider="getPayGrades" finished-at="2016-09-14T07:49:12Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Currency=AUD, BrowserName=Chrome, Runmode=Y, Maximum Salary=250000, Minimum Salary=350000, Duplicate=N, Grade Name=Grade A}]]>
+                <![CDATA[{Currency=AUD, BrowserName=Chrome, Runmode=Y, Maximum Salary=250000, Minimum Salary=350000.25, Duplicate=N, Grade Name=Grade A}]]>
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping as Test Case Runmode is No]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addPayGradesTest(Admin_JobConfigTest.java:375)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addPayGradesTest -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-13T07:34:44Z" finished-at="2016-09-13T07:34:44Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="1" started-at="2016-09-14T07:49:12Z" finished-at="2016-09-14T07:49:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroy -->
-        <test-method status="PASS" signature="addPayGradesTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addPayGradesTest" duration-ms="25073" started-at="2016-09-13T07:34:44Z" data-provider="getPayGrades" finished-at="2016-09-13T07:35:09Z">
+        <test-method status="SKIP" signature="addPayGradesTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addPayGradesTest" duration-ms="1" started-at="2016-09-14T07:49:12Z" data-provider="getPayGrades" finished-at="2016-09-14T07:49:12Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Currency=NZD, BrowserName=Chrome, Runmode=Y, Maximum Salary=2500000, Minimum Salary=350000.25, Duplicate=N, Grade Name=Grade B}]]>
+                <![CDATA[{Currency=NZD, BrowserName=Chrome, Runmode=Y, Maximum Salary=2500000, Minimum Salary=350000, Duplicate=N, Grade Name=Grade B}]]>
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping as Test Case Runmode is No]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addPayGradesTest(Admin_JobConfigTest.java:375)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addPayGradesTest -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-13T07:34:44Z" finished-at="2016-09-13T07:34:44Z">
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-14T07:49:12Z" finished-at="2016-09-14T07:49:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-13T07:35:09Z" finished-at="2016-09-13T07:35:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- create -->
-        <test-method status="PASS" signature="addPayGradesTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addPayGradesTest" duration-ms="39332" started-at="2016-09-13T07:35:09Z" data-provider="getPayGrades" finished-at="2016-09-13T07:35:49Z">
+        <test-method status="SKIP" signature="addPayGradesTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addPayGradesTest" duration-ms="1" started-at="2016-09-14T07:49:12Z" data-provider="getPayGrades" finished-at="2016-09-14T07:49:12Z">
           <params>
             <param index="0">
               <value>
@@ -466,22 +598,52 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping as Test Case Runmode is No]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addPayGradesTest(Admin_JobConfigTest.java:375)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addPayGradesTest -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-13T07:35:09Z" finished-at="2016-09-13T07:35:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- destroy -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-13T07:35:49Z" finished-at="2016-09-13T07:35:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- destroy -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-13T07:35:49Z" finished-at="2016-09-13T07:35:49Z">
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-14T07:49:12Z" finished-at="2016-09-14T07:49:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create -->
-        <test-method status="PASS" signature="addPayGradesTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addPayGradesTest" duration-ms="47772" started-at="2016-09-13T07:35:49Z" data-provider="getPayGrades" finished-at="2016-09-13T07:36:36Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-14T07:49:12Z" finished-at="2016-09-14T07:49:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destroy -->
+        <test-method status="SKIP" signature="addPayGradesTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="addPayGradesTest" duration-ms="1" started-at="2016-09-14T07:49:12Z" data-provider="getPayGrades" finished-at="2016-09-14T07:49:12Z">
           <params>
             <param index="0">
               <value>
@@ -489,18 +651,60 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping as Test Case Runmode is No]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping as Test Case Runmode is No
+	at com.hrms.orangehrms.project.testcases.Admin_JobConfigTest.addPayGradesTest(Admin_JobConfigTest.java:375)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addPayGradesTest -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-13T07:36:36Z" finished-at="2016-09-13T07:36:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- destroy -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="1" started-at="2016-09-13T07:36:37Z" finished-at="2016-09-13T07:36:37Z">
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-14T07:49:12Z" finished-at="2016-09-14T07:49:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create -->
-        <test-method status="SKIP" signature="deleteJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="deleteJobTitleTest" duration-ms="5" started-at="2016-09-13T07:36:37Z" data-provider="getDeleteData" finished-at="2016-09-13T07:36:37Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-14T07:49:12Z" finished-at="2016-09-14T07:49:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destroy -->
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-14T07:49:12Z" finished-at="2016-09-14T07:49:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destroy -->
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-14T07:49:12Z" finished-at="2016-09-14T07:49:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="SKIP" signature="deleteJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="deleteJobTitleTest" duration-ms="3" started-at="2016-09-14T07:49:12Z" data-provider="getDeleteData" finished-at="2016-09-14T07:49:12Z">
           <params>
             <param index="0">
               <value>
@@ -545,7 +749,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteJobTitleTest -->
-        <test-method status="SKIP" signature="deleteJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="deleteJobTitleTest" duration-ms="1" started-at="2016-09-13T07:36:37Z" data-provider="getDeleteData" finished-at="2016-09-13T07:36:37Z">
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="1" started-at="2016-09-14T07:49:12Z" finished-at="2016-09-14T07:49:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-14T07:49:12Z" finished-at="2016-09-14T07:49:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destroy -->
+        <test-method status="SKIP" signature="deleteJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="deleteJobTitleTest" duration-ms="2" started-at="2016-09-14T07:49:12Z" data-provider="getDeleteData" finished-at="2016-09-14T07:49:12Z">
           <params>
             <param index="0">
               <value>
@@ -590,23 +802,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteJobTitleTest -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-13T07:36:37Z" finished-at="2016-09-13T07:36:37Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-14T07:49:12Z" finished-at="2016-09-14T07:49:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroy -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-13T07:36:37Z" finished-at="2016-09-13T07:36:37Z">
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="1" started-at="2016-09-14T07:49:12Z" finished-at="2016-09-14T07:49:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="1" started-at="2016-09-13T07:36:37Z" finished-at="2016-09-13T07:36:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- create -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-13T07:36:37Z" finished-at="2016-09-13T07:36:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- destroy -->
-        <test-method status="SKIP" signature="deleteJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="deleteJobTitleTest" duration-ms="1" started-at="2016-09-13T07:36:37Z" data-provider="getDeleteData" finished-at="2016-09-13T07:36:37Z">
+        <test-method status="SKIP" signature="deleteJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="deleteJobTitleTest" duration-ms="2" started-at="2016-09-14T07:49:12Z" data-provider="getDeleteData" finished-at="2016-09-14T07:49:12Z">
           <params>
             <param index="0">
               <value>
@@ -651,15 +855,49 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteJobTitleTest -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-13T07:36:37Z" finished-at="2016-09-13T07:36:37Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="1" started-at="2016-09-14T07:49:12Z" finished-at="2016-09-14T07:49:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroy -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-13T07:36:37Z" finished-at="2016-09-13T07:36:37Z">
+        <test-method status="PASS" signature="deletePayGrade(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="deletePayGrade" duration-ms="23902" started-at="2016-09-14T07:49:12Z" data-provider="getDeletePayGrades" finished-at="2016-09-14T07:49:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{BrowserName=Chrome, Runmode=Y, Expected Result=Pass, Grade Name=Grade A}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePayGrade -->
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-14T07:49:12Z" finished-at="2016-09-14T07:49:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create -->
-        <test-method status="SKIP" signature="editJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="editJobTitleTest" duration-ms="2" started-at="2016-09-13T07:36:37Z" data-provider="getEditData" finished-at="2016-09-13T07:36:37Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="1" started-at="2016-09-14T07:49:36Z" finished-at="2016-09-14T07:49:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destroy -->
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-14T07:49:36Z" finished-at="2016-09-14T07:49:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="PASS" signature="deletePayGrade(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="deletePayGrade" duration-ms="5810" started-at="2016-09-14T07:49:36Z" data-provider="getDeletePayGrades" finished-at="2016-09-14T07:49:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{BrowserName=Chrome, Runmode=Y, Expected Result=Pass, Grade Name=Grade E}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePayGrade -->
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-14T07:49:42Z" finished-at="2016-09-14T07:49:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destroy -->
+        <test-method status="SKIP" signature="editJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="editJobTitleTest" duration-ms="2" started-at="2016-09-14T07:49:42Z" data-provider="getEditData" finished-at="2016-09-14T07:49:42Z">
           <params>
             <param index="0">
               <value>
@@ -704,15 +942,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editJobTitleTest -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="1" started-at="2016-09-13T07:36:37Z" finished-at="2016-09-13T07:36:37Z">
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-14T07:49:42Z" finished-at="2016-09-14T07:49:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-13T07:36:37Z" finished-at="2016-09-13T07:36:37Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="1" started-at="2016-09-14T07:49:42Z" finished-at="2016-09-14T07:49:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroy -->
-        <test-method status="SKIP" signature="editJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="editJobTitleTest" duration-ms="1" started-at="2016-09-13T07:36:37Z" data-provider="getEditData" finished-at="2016-09-13T07:36:37Z">
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-14T07:49:42Z" finished-at="2016-09-14T07:49:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="SKIP" signature="editJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="editJobTitleTest" duration-ms="2" started-at="2016-09-14T07:49:42Z" data-provider="getEditData" finished-at="2016-09-14T07:49:42Z">
           <params>
             <param index="0">
               <value>
@@ -757,15 +999,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editJobTitleTest -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-13T07:36:37Z" finished-at="2016-09-13T07:36:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- create -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-13T07:36:37Z" finished-at="2016-09-13T07:36:37Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="1" started-at="2016-09-14T07:49:42Z" finished-at="2016-09-14T07:49:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroy -->
-        <test-method status="SKIP" signature="editJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="editJobTitleTest" duration-ms="2" started-at="2016-09-13T07:36:37Z" data-provider="getEditData" finished-at="2016-09-13T07:36:37Z">
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-14T07:49:42Z" finished-at="2016-09-14T07:49:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="SKIP" signature="editJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="editJobTitleTest" duration-ms="2" started-at="2016-09-14T07:49:42Z" data-provider="getEditData" finished-at="2016-09-14T07:49:42Z">
           <params>
             <param index="0">
               <value>
@@ -810,15 +1052,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editJobTitleTest -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-13T07:36:37Z" finished-at="2016-09-13T07:36:37Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="1" started-at="2016-09-14T07:49:42Z" finished-at="2016-09-14T07:49:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroy -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-13T07:36:37Z" finished-at="2016-09-13T07:36:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- create -->
-        <test-method status="SKIP" signature="editJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="editJobTitleTest" duration-ms="1" started-at="2016-09-13T07:36:37Z" data-provider="getEditData" finished-at="2016-09-13T07:36:37Z">
+        <test-method status="SKIP" signature="editJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="editJobTitleTest" duration-ms="1" started-at="2016-09-14T07:49:42Z" data-provider="getEditData" finished-at="2016-09-14T07:49:42Z">
           <params>
             <param index="0">
               <value>
@@ -863,15 +1101,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editJobTitleTest -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-13T07:36:37Z" finished-at="2016-09-13T07:36:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- destroy -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-13T07:36:37Z" finished-at="2016-09-13T07:36:37Z">
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-14T07:49:42Z" finished-at="2016-09-14T07:49:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create -->
-        <test-method status="SKIP" signature="editJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="editJobTitleTest" duration-ms="2" started-at="2016-09-13T07:36:37Z" data-provider="getEditData" finished-at="2016-09-13T07:36:37Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="1" started-at="2016-09-14T07:49:42Z" finished-at="2016-09-14T07:49:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destroy -->
+        <test-method status="SKIP" signature="editJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="editJobTitleTest" duration-ms="1" started-at="2016-09-14T07:49:42Z" data-provider="getEditData" finished-at="2016-09-14T07:49:42Z">
           <params>
             <param index="0">
               <value>
@@ -916,11 +1154,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editJobTitleTest -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-13T07:36:37Z" finished-at="2016-09-13T07:36:37Z">
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-14T07:49:42Z" finished-at="2016-09-14T07:49:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create -->
-        <test-method status="SKIP" signature="editJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="editJobTitleTest" duration-ms="1" started-at="2016-09-13T07:36:37Z" data-provider="getEditData" finished-at="2016-09-13T07:36:37Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="1" started-at="2016-09-14T07:49:42Z" finished-at="2016-09-14T07:49:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destroy -->
+        <test-method status="SKIP" signature="editJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="editJobTitleTest" duration-ms="2" started-at="2016-09-14T07:49:42Z" data-provider="getEditData" finished-at="2016-09-14T07:49:42Z">
           <params>
             <param index="0">
               <value>
@@ -965,11 +1207,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editJobTitleTest -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-13T07:36:37Z" finished-at="2016-09-13T07:36:37Z">
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-14T07:49:42Z" finished-at="2016-09-14T07:49:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-14T07:49:42Z" finished-at="2016-09-14T07:49:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroy -->
-        <test-method status="SKIP" signature="editJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="editJobTitleTest" duration-ms="1" started-at="2016-09-13T07:36:37Z" data-provider="getEditData" finished-at="2016-09-13T07:36:37Z">
+        <test-method status="SKIP" signature="editJobTitleTest(java.util.Hashtable)[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="editJobTitleTest" duration-ms="1" started-at="2016-09-14T07:49:42Z" data-provider="getEditData" finished-at="2016-09-14T07:49:42Z">
           <params>
             <param index="0">
               <value>
@@ -1014,19 +1260,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editJobTitleTest -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-13T07:36:37Z" finished-at="2016-09-13T07:36:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- destroy -->
-        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-13T07:36:37Z" finished-at="2016-09-13T07:36:37Z">
+        <test-method status="PASS" signature="create()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="create" is-config="true" duration-ms="0" started-at="2016-09-14T07:49:42Z" finished-at="2016-09-14T07:49:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="1" started-at="2016-09-13T07:36:37Z" finished-at="2016-09-13T07:36:37Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="destroy" is-config="true" duration-ms="0" started-at="2016-09-14T07:49:42Z" finished-at="2016-09-14T07:49:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroy -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="tearDown" is-config="true" duration-ms="1264" started-at="2016-09-13T07:36:37Z" finished-at="2016-09-13T07:36:38Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.hrms.orangehrms.project.testcases.Admin_JobConfigTest@56ac3a89]" name="tearDown" is-config="true" duration-ms="1274" started-at="2016-09-14T07:49:42Z" finished-at="2016-09-14T07:49:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

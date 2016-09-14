@@ -17,6 +17,7 @@
           <include name="destroy"/>
           <include name="editJobTitleTest" invocation-numbers="0 1 2 3 4 5 6"/>
           <include name="startUp"/>
+          <include name="addPayGradesTest" invocation-numbers="0 1 2 3 4 5"/>
         </methods>
       </class> <!-- com.hrms.orangehrms.project.testcases.Admin_JobConfigTest -->
     </classes>
